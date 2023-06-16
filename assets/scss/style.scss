@@ -39,6 +39,7 @@
 
     font-family: "Montserrat", sans-serif;
     font-size: 62.5%;
+    -webkit-text-size-adjust: none;
     font-weight: 450;
     line-height: 1;
 }
@@ -597,7 +598,7 @@ a, button, summary {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    gap: 2.4rem;
+    gap: 1.6rem;
     margin-top: 1.6rem;
 }
 
@@ -697,7 +698,7 @@ a, button, summary {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    gap: 2.4rem;
+    gap: 1.6rem;
     margin-top: 1.6rem;
 }
 
@@ -807,7 +808,7 @@ a, button, summary {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    gap: 2.4rem;
+    gap: 1.6rem;
     margin-top: 1.6rem;
 }
 
@@ -894,7 +895,6 @@ a, button, summary {
     justify-content: center;
     align-items: center;
     width: 100%;
-    list-style: none;
 }
 
 .main-services-faq-entry {
@@ -911,11 +911,16 @@ a, button, summary {
     justify-content: flex-start;
     align-items: center;
     gap: 1.6rem;
+    list-style: none;
     font-size: 1.5rem;
     font-weight: 650;
     line-height: 1.5;
     padding: 1.6rem 3.2rem;
     border-bottom: 1px solid #e8e8e8;
+
+    &::-webkit-details-marker {
+        display: none;
+    }
 
     span {
         font-size: 2.2rem;
@@ -925,9 +930,9 @@ a, button, summary {
 .main-services-faq-answer {
     font-size: 1.5rem;
     line-height: 1.5;
-    padding: 1.6rem 3.2rem 3.2rem 3.2rem;
-    background-color: var(--light-green);
+    padding: 3.2rem;
     border-bottom: 1px solid #e8e8e8;
+    background-color: var(--light-grey);
 }
 
 
