@@ -26,7 +26,7 @@
   --medium-grey: #dcdcdc;
   --dark-grey: #a0a0a0;
   --primary-text: #fff;
-  --secondary-text: #000;
+  --secondary-text: #333;
   --navigation-text-portrait: #808080;
   --navigation-text-landscape: #404040;
   font-family: "Montserrat", sans-serif;
@@ -426,13 +426,14 @@ a, button, summary {
 }
 
 .main-lt-intro-text {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 1.5;
+  color: var(--secondary-text);
 }
 
 @media (min-width: 640px) {
   .main-lt-intro-text {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 }
 .main-lt-reasons-wrapper {
@@ -498,16 +499,17 @@ a, button, summary {
 
 .main-lt-reasons-slider-headline {
   margin-top: 0.8rem;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 650;
   line-height: 1.2;
   text-align: center;
 }
 
 .main-lt-reasons-slider-text {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 450;
   line-height: 1.5;
+  color: var(--secondary-text);
 }
 
 .main-lt-reasons-slider-control {
@@ -516,7 +518,6 @@ a, button, summary {
   justify-content: center;
   align-items: center;
   gap: 1.6rem;
-  margin-top: 1.6rem;
 }
 
 .main-lt-reasons-slider-control-button {
@@ -592,16 +593,17 @@ a, button, summary {
 
 .main-lt-services-slider-headline {
   margin-top: 0.8rem;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 650;
   line-height: 1.2;
   text-align: center;
 }
 
 .main-lt-services-slider-text {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 450;
   line-height: 1.5;
+  color: var(--secondary-text);
 }
 
 .main-lt-services-slider-control {
@@ -625,7 +627,7 @@ a, button, summary {
 
 .main-lt-services-slider-link {
   padding: 1.6rem;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 650;
   text-transform: uppercase;
   border-radius: 2.4rem;
@@ -696,16 +698,16 @@ a, button, summary {
 
 .main-lt-treatment-slider-headline {
   margin-top: 0.8rem;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 650;
   line-height: 1.2;
   text-align: center;
 }
 
 .main-lt-treatment-slider-text {
-  font-size: 1.5rem;
-  font-weight: 450;
+  font-size: 1.6rem;
   line-height: 1.5;
+  color: var(--secondary-text);
 }
 
 .main-lt-treatment-slider-control {
@@ -729,7 +731,7 @@ a, button, summary {
 
 .main-lt-treatment-slider-link {
   padding: 1.6rem;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 650;
   text-transform: uppercase;
   border-radius: 2.4rem;
@@ -778,13 +780,15 @@ a, button, summary {
 
 .main-services-text {
   padding: 0 3.2rem;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 1.5;
+  text-align: center;
+  color: var(--secondary-text);
 }
 
 .main-services-faq-headline {
   margin-top: 2.4rem;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 650;
 }
 
@@ -800,10 +804,6 @@ a, button, summary {
   width: 100%;
 }
 
-.main-services-faq-entry:last-child > .main-services-faq-question, .main-services-faq-entry:last-child > .main-services-faq-answer {
-  border-bottom: none;
-}
-
 .main-services-faq-question {
   display: flex;
   flex-flow: row nowrap;
@@ -811,7 +811,7 @@ a, button, summary {
   align-items: center;
   gap: 1.6rem;
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 650;
   line-height: 1.5;
   padding: 1.6rem 3.2rem;
@@ -825,11 +825,20 @@ a, button, summary {
 }
 
 .main-services-faq-answer {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 1.5;
   padding: 3.2rem;
   border-bottom: 1px solid #e8e8e8;
   background-color: var(--light-grey);
+  color: var(--secondary-text);
+}
+
+.main-services-faq-entry:last-child > .main-services-faq-question {
+  border-bottom: none;
+}
+
+.main-services-faq-entry:last-child > .main-services-faq-answer {
+  border-top: 1px solid #e8e8e8;
 }
 
 .main-contact-wrapper {
@@ -854,9 +863,10 @@ a, button, summary {
   font-weight: 650;
 }
 .main-contact-headline p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 1.5;
   text-align: center;
+  color: var(--secondary-text);
 }
 
 .main-contact-form-wrapper {
@@ -879,17 +889,62 @@ a, button, summary {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  gap: 3.2rem;
   width: 100vw;
-  padding: 0 3.2rem env(safe-area-inset-bottom) 3.2rem;
-  background-color: var(--dark-grey);
+  padding: 4.8rem 0 calc(4.8rem + env(safe-area-inset-bottom)) 0;
+  background-color: var(--light-grey);
+  color: var(--secondary-text);
 }
 
-.footer-legal-information {
-  padding: 1.6rem;
-  font-size: 1.5rem;
+.footer-google {
+  margin: 0.8rem 0;
+}
+.footer-google img {
+  height: 100px;
+}
+
+.footer-footnotes-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.footer-footnotes-link {
+  padding: 0.8rem;
+  font-size: 1.6rem;
   font-weight: 650;
+  color: var(--primary-green);
+}
+
+.footer-legal-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.footer-legal-text {
+  margin: 0.8rem 0;
+  font-size: 1.6rem;
+}
+
+.footer-legal-link {
+  padding: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 650;
+}
+
+.footer-wetege-link {
+  width: 27rem;
+  padding: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 650;
+  line-height: 1.35;
   text-align: center;
-  color: var(--primary-text);
+  color: var(--primary-green);
 }
 
 /*# sourceMappingURL=style.css.map */
