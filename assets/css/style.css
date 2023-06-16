@@ -455,7 +455,11 @@ a, button, summary {
 
 .main-lt-reasons-slider {
   position: relative;
-  display: flex;
+}
+
+.main-lt-reasons-slider-slide {
+  position: relative;
+  display: none;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
@@ -465,36 +469,48 @@ a, button, summary {
   padding: 0 3.2rem;
   text-align: center;
 }
+.main-lt-reasons-slider-slide.visible {
+  display: flex;
+  animation: fadeVisibility 0.5s;
+}
 
-.main-lt-reasons-image {
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.main-lt-reasons-slider-image {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   width: calc(100% - 4.8rem);
 }
-.main-lt-reasons-image img {
+.main-lt-reasons-slider-image img {
   width: 100%;
   max-width: fit-content;
   max-height: 28rem;
 }
 
-.main-lt-reasons-slider-arrow-back {
+.main-lt-reasons-slider-arrows {
   position: absolute;
-  top: 14rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  top: 12rem;
   transform: translateY(-50%);
-  left: 2.4rem;
+  padding: 0 0.8rem;
   font-size: 2rem;
   color: #dcdcdc;
 }
 
-.main-lt-reasons-slider-arrow-forward {
-  position: absolute;
-  top: 14rem;
-  transform: translateY(-50%);
-  right: 2.4rem;
-  font-size: 2rem;
-  color: #dcdcdc;
+.main-lt-reasons-slider-arrow-previous, .main-lt-reasons-slider-arrow-next {
+  padding: 1.6rem;
 }
 
 .main-lt-reasons-slider-headline {
@@ -526,7 +542,7 @@ a, button, summary {
   border-radius: 50%;
   background-color: var(--medium-grey);
 }
-.main-lt-reasons-slider-control-button.active {
+.main-lt-reasons-slider-control-button.selected {
   background-color: var(--primary-green);
 }
 
