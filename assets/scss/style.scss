@@ -39,7 +39,7 @@
 
     font-family: "Montserrat", sans-serif;
     font-size: 62.5%;
-    font-weight: 400;
+    font-weight: 450;
     line-height: 1;
 }
 
@@ -69,7 +69,6 @@ a, button, summary {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
 }
 
 
@@ -85,6 +84,7 @@ a, button, summary {
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
     background-color: #fff;
     z-index: 1;
 }
@@ -160,7 +160,7 @@ a, button, summary {
     .header-container {
         flex-flow: row nowrap;
         justify-content: space-between;
-        padding: 0 1.6rem;
+        padding: 0 calc(1.6rem + env(safe-area-inset-right)) 0 calc(1.6rem + env(safe-area-inset-left));
         box-shadow: inset 0 -1px 0 0 #e8e8e8;
     }
 
@@ -191,11 +191,9 @@ a, button, summary {
     }
 }
 
-
-
 @media (min-width: 960px) {
     .header-container {
-        padding: 0 2.4rem;
+        padding: 0 calc(2.4rem + env(safe-area-inset-right)) 0 calc(2.4rem + env(safe-area-inset-left));
     }
     
     .header-logo-wrapper {
@@ -233,25 +231,20 @@ a, button, summary {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
     width: 100%;
-    margin: 8rem 0;
+    margin: 8rem 0 9.6rem 0;
 }
 
 
 
 @media (min-width: 640px) {
     .main-container {
-        gap: 0;
         margin-top: 5.6rem;
     }
 }
 
-
-
 @media (min-width: 960px) {
     .main-container {
-        gap: 4rem;
         margin-top: 8rem;
     }
 }
@@ -263,12 +256,21 @@ a, button, summary {
 .main-hero-wrapper {
     display: flex;
     flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem;
+    width: 100%;
+}
+
+.main-hero {
+    display: flex;
+    flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     min-height: 45rem;
     height: 65vh;
-    padding: 3.2rem 0;
+    padding: 3.2rem env(safe-area-inset-right) 3.2rem env(safe-area-inset-left);
     background: #dcdcdc url("../images/hero.jpg");
     background-size: cover;
     background-position: left;
@@ -320,6 +322,10 @@ a, button, summary {
 
 @media (min-width: 640px) {
     .main-hero-wrapper {
+        gap: 0;
+    }
+    
+    .main-hero {
         min-height: 25rem;
         height: 70vh;
         max-height: 45rem;
@@ -328,7 +334,7 @@ a, button, summary {
         justify-content: center;
         align-items: flex-start;
         width: 100%;
-        padding: 4rem 0;
+        padding: 4rem env(safe-area-inset-right) 4rem env(safe-area-inset-left);
         background-position: center;
     }
 
@@ -376,6 +382,12 @@ a, button, summary {
     }
 }
 
+@media (min-width: 960px) {
+    .main-hero-wrapper {
+        gap: 3.2rem;
+    }
+}
+
 
 
 // Badge area //
@@ -418,7 +430,8 @@ a, button, summary {
 }
 
 
-@media (min-width: 640px) {
+
+@media (min-width: 640px) {    
     .main-badge-wrapper {
         position: relative;
         top: -40px;
@@ -438,6 +451,35 @@ a, button, summary {
 
 
 
+// Main content area //
+
+.main-content-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 9.6rem;
+    width: 100%;
+    margin-top: 6.4rem;
+    padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
+}
+
+
+
+@media (min-width: 640px) {
+    .main-content-wrapper {
+        margin-top: 2.4rem;
+    }
+}
+
+@media (min-width: 960px) {
+    .main-content-wrapper {
+        margin-top: 6.4rem;
+    }
+}
+
+
+
 // Light-Touch intro area //
 
 .main-lt-intro-wrapper {
@@ -447,7 +489,6 @@ a, button, summary {
     align-items: center;
     gap: 2.4rem;
     width: 100%;
-    margin-top: 5rem;
     padding: 0 3.2rem;
     text-align: center;
 }
@@ -460,9 +501,15 @@ a, button, summary {
 
 .main-lt-intro-text {
     font-size: 1.5rem;
-    font-weight: 450;
     line-height: 1.5;
+}
 
+
+
+@media (min-width: 640px) {
+    .main-lt-intro-text {
+        font-size: 1.5rem;
+    }
 }
 
 
@@ -476,7 +523,6 @@ a, button, summary {
     align-items: center;
     gap: 2.4rem;
     width: 100%;
-    margin-top: 5rem;
 }
 
 .main-lt-reasons-headline {
@@ -577,7 +623,6 @@ a, button, summary {
     align-items: center;
     gap: 2.4rem;
     width: 100%;
-    margin-top: 5rem;
 }
 
 .main-lt-services-headline {
@@ -688,7 +733,6 @@ a, button, summary {
     align-items: center;
     gap: 2.4rem;
     width: 100%;
-    margin-top: 5rem;
 }
 
 .main-lt-treatment-headline {
@@ -797,7 +841,7 @@ a, button, summary {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 9.6rem;
 }
 
 .main-services-hairremoval-wrapper, .main-services-cryolipolysis-wrapper {
@@ -806,7 +850,6 @@ a, button, summary {
     justify-content: center;
     align-items: center;
     gap: 2.4rem;
-    margin-top: 5rem;
 }
 
 .main-services-headline {
@@ -898,7 +941,6 @@ a, button, summary {
     align-items: center;
     gap: 2.4rem;
     width: 100%;
-    margin-top: 5rem;
     padding: 0 3.2rem;
 }
 
@@ -946,7 +988,6 @@ a, button, summary {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    margin-top: 2rem;
     padding: 0 3.2rem env(safe-area-inset-bottom) 3.2rem;
     background-color: var(--dark-grey);
 }
