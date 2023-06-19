@@ -374,8 +374,8 @@ a, button, summary {
 @media (min-width: 640px) {
   .main-badge-wrapper {
     position: relative;
-    top: -40px;
-    right: 40px;
+    top: -4rem;
+    right: calc(4rem + env(safe-area-inset-right));
     justify-content: flex-end;
   }
 }
@@ -516,7 +516,6 @@ a, button, summary {
   justify-content: center;
   align-items: center;
   gap: 1.6rem;
-  margin-top: 1.6rem;
 }
 
 .main-lt-reasons-slider-control-button {
@@ -780,6 +779,7 @@ a, button, summary {
   padding: 0 3.2rem;
   font-size: 1.5rem;
   line-height: 1.5;
+  text-align: center;
 }
 
 .main-services-faq-headline {
@@ -822,6 +822,7 @@ a, button, summary {
 }
 .main-services-faq-question span {
   font-size: 2.2rem;
+  pointer-events: none;
 }
 
 .main-services-faq-answer {

@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <script type="module" src="https://kit.fontawesome.com/70ed03f35c.js" crossorigin="anonymous"></script>
+    <script type="module" src="assets/js/script.js"></script>
 </head>
 
 <body>
@@ -165,13 +166,13 @@
                             <div class="main-services-image">
                                 <img src="assets/images/consultation.png" alt="lighttouch-consultation" />
                             </div>
-                            <p class="main-services-text">Deinen Fettzellen läuft es eiskalt den Rücken herunter: Bei der 360° Kryolipolyse* handelt es sich um eine nicht-invasive Methode zur Fettbehandlung mit Kälte.</p>
+                            <p class="main-services-text">Deinen Fettzellen läuft es eiskalt den Rücken herunter: Bei der 360° Kryolipolyse² handelt es sich um eine nicht-invasive Methode zur Fettbehandlung mit Kälte.</p>
                             <h3 class="main-services-faq-headline">Häufige Fragen</h3>
                             <div class="hr"></div>
 
                             <div class="main-services-faq-wrapper">
                                 <details class="main-services-faq-entry">
-                                    <summary class="main-services-faq-question"><span><i class="fa-solid fa-plus"></i></span>Was bedeutet 360° Kryolipolyse?</summary>
+                                    <summary class="main-services-faq-question"><span><i class="fa-solid fa-plus"></i></span>Was bedeutet 360° Kryolipolyse²?</summary>
                                     <p class="main-services-faq-answer"> Die Kosten Ihrer dauerhaften¹ Haarentfernung sind so individuell wie Ihre Körperbehaarung. Um Ihr Ziel – perfekt gepflegte, glatte Haut – zu erreichen, sind sechs bis acht Sitzungen in festgelegten Intervallen erforderlich.</p>
                                 </details>
                                 <details class="main-services-faq-entry">
@@ -190,12 +191,24 @@
                     <div class="main-contact-wrapper">
                         <div class="main-contact-headline">
                             <h2>Termin & Kontakt</h2>
-                            <p>Vereinbare noch heute deinen persönlichen, kostenfreien Beratungstermin und starte in dein neues Leben ohne lästige Härchen!</p>
+                            <p>Vereinbare noch heute deinen persönlichen, kostenfreien Beratungstermin und starte mit uns in dein neues Leben!</p>
                         </div>
                         <div class="hr"></div>
                         <section class="main-contact-form-wrapper">
-                            <form class="main-contact-form" action="post">
-                                Kontaktformular kommt noch
+                            <form class="main-contact-form" action="https://formspree.io/f/mzbqnvak" method="post">
+                                <div class="main-contact-form-interest-wrapper">
+                                    <h4 class="main-contact-form-interest-headline">Ich habe Interesse an</h4>
+                                    <div class="main-contact-form-interest-checkboxes">
+                                        <label for="hairremoval"><input type="checkbox" name="hairremoval" id="hairremoval" />Dauerhafte Haarentfernung</label>
+                                        <label for="cryolipolysis"><input type="checkbox" name="cryolipolysis" id="cryolipolysis" />360° Kryolipolyse</label>
+                                    </div>
+                                </div>
+                                <input class="main-contact-form-input" type="text" name="firstname" placeholder="Vorname *" required />
+                                <input class="main-contact-form-input" type="text" name="lastname" placeholder="Nachname *" required />
+                                <input class="main-contact-form-input" type="email" name="email" placeholder="E-Mail *" required />
+                                <input class="main-contact-form-input" type="tel" name="phone" placeholder="Telefon" />
+                                <textarea class="main-contact-form-input" name="message" id="message" cols="30" rows="10" placeholder="Deine Nachricht an uns"></textarea>
+                                <button class="main-contact-form-button" type="submit">Senden</button>
                             </form>
                         </section>
                     </div>
@@ -213,8 +226,6 @@
         </footer>
 
     </div>
-
-    <script type="module" src="assets/js/script.js"></script>
     
 </body>
 
@@ -224,17 +235,27 @@
 
 <!--
 to-do:
-Google Rezensionen svg-Bild basteln mit Google Schrift
-anderes Hintergrundbild suchen für Hero
-elfsight siegel im footer einbinden
+Kontaktformular basteln
+    - Checkboxen required machen (mind. 1)
+Kontaktdaten, Adresse, Google Maps einbinden
+Slider basteln
+Google Rezensionen Widget basteln
+NISV Siegel basteln
+über Light-Touch Bereich: Fakten und Zahlen! über 10000 Behandlungen, über 15 Jahre, etc.
+
 
 Inhalte:
-Onepager nav/allgemein/IPL/nadel/kryo/FAQ/google-slider/kontakt
 Rechtstexte von eRecht24
-Google Rezensionen + NISV Siegel (nicht ionisierende strahlen verordnung)
-Dauerhafte Haarentfernung * <-- Sternchen erklären
+Dauerhaft und Kryolipolyse mit Sternchen erklären
 Preise inkl. meistgebuchte behandlungen
 FAQ zu IPL / Nadelepilation / Kryo
+
+
+Maureen to-do:
+- Hero Bild suchen
+- alle anderen Bilder suchen
+- Farbkorrektur / Zuschnitt aller Bilder
+
 
 --Logo--
 Montserrat regular, 64px, 280pt tracking vs 14px, 280pt tracking
@@ -247,13 +268,9 @@ v.01
 entdeckte verbesserungen:
 
 - text dunkler machen
-
-portrait
 - text align einheitlich machen
-- summary hat in iOS noch default marker
 
-landscape
-- textgröße separat festlegen, wird irgendwie überschrieben
+iOS landscape
 - bilder skalieren nicht richtig
-- summary text auch zu groß
+- click direkt auf plus/minus button macht probleme -> pointer-events löst es?
 -->
