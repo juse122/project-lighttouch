@@ -66,3 +66,10 @@ detailsElements.forEach(element => {
         };
     });
 });
+
+
+
+// Contact form submit message & error handling
+
+// <i class="fa-solid fa-circle-check"></i>
+// <i class="fa-solid fa-circle-exclamation"></i>

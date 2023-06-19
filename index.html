@@ -29,9 +29,9 @@
                 </div>
                 <nav class="header-navigation-wrapper">
                     <ul class="header-navigation">
-                        <li><a class="header-navigation-link" href="#">Haarentfernung</a></li>
-                        <li><a class="header-navigation-link" href="#">Kryolipolyse</a></li>
-                        <li><a class="header-navigation-link contact" href="#">Termin</a></li>
+                        <li><a class="header-navigation-link" href="#hairremoval">Haarentfernung</a></li>
+                        <li><a class="header-navigation-link" href="#cryolipolysis">Kryolipolyse</a></li>
+                        <li><a class="header-navigation-link contact" href="#contact">Termin</a></li>
                     </ul>
                 </nav>
 
@@ -47,9 +47,9 @@
                             <h1 class="main-hero-headline">Dauerhafte¹ Haarentfernung</h1>
                             <h1 class="main-hero-headline">360° Kryolipolyse²</h1>
                             <p class="main-hero-text">Die Experten für streichelzarte Haut seit über 15 Jahren.</p>
-                            <a class="main-hero-button-desktop" href="#">Jetzt Termin anfragen</a>
+                            <a class="main-hero-button-desktop" href="#contact">Jetzt Termin anfragen</a>
                         </div>
-                        <a class="main-hero-button-mobile" href="#">Jetzt Termin anfragen</a>
+                        <a class="main-hero-button-mobile" href="#contact">Jetzt Termin anfragen</a>
                     </div>
 
                     <div class="main-badge-wrapper">
@@ -118,7 +118,7 @@
                             <button class="main-lt-services-slider-arrow-forward"><i class="fa-solid fa-chevron-right"></i></button>
                             <h3 class="main-lt-services-slider-headline">IPL Haarentfernung</h3>
                             <p class="main-lt-services-slider-text">Jederzeit glatte, gepflegte Haut ohne Rasieren, Epilieren oder Wachsen: Mit modernster Technik wie hochfrequentem, gepulstem Licht und der Elektro Nadelepilation werden Haarwurzeln dauerhaft verödet. Die zum Einsatz kommenden Methoden sind dabei maximal effektiv, aber schonend und sanft zu Haut und Gewebe.</p>
-                            <a class="main-lt-services-slider-link" href="#">Mehr erfahren</a>
+                            <a class="main-lt-services-slider-link" href="#hairremoval">Mehr erfahren</a>
                         </div>
                         <div class="main-lt-services-slider-control">
                             <button class="main-lt-services-slider-control-button active"></button>
@@ -141,7 +141,7 @@
                                 <h3>Termin vereinbaren</h3>
                             </div>
                             <p class="main-lt-treatment-slider-text">Kontaktiere uns einfach via E-Mail oder Telefon, um deinen individuellen, kostenfreien Beratungstermin bei uns zu vereinbaren.</p>
-                            <a class="main-lt-treatment-slider-link" href="#">Termin vereinbaren</a>
+                            <a class="main-lt-treatment-slider-link" href="#contact">Termin vereinbaren</a>
                         </div>
                         <div class="main-lt-treatment-slider-control">
                             <button class="main-lt-treatment-slider-control-button active"></button>
@@ -152,7 +152,7 @@
 
                     <div class="main-services-wrapper">
                         
-                        <section class="main-services-hairremoval-wrapper">
+                        <section id="hairremoval" class="main-services-hairremoval-wrapper">
                             <h2 class="main-services-headline">Dauerhafte¹ Haarentfernung</h2>
                             <div class="hr"></div>
                             <div class="main-services-image">
@@ -178,7 +178,7 @@
                             </div>
                         </section>
 
-                        <section class="main-services-cryolipolysis-wrapper">
+                        <section id="cryolipolysis" class="main-services-cryolipolysis-wrapper">
                             <h2 class="main-services-headline">360° Kryolipolyse²</h2>
                             <div class="hr"></div>
                             <div class="main-services-image">
@@ -206,7 +206,7 @@
 
                     </div>
 
-                    <div class="main-contact-wrapper">
+                    <div id="contact" class="main-contact-wrapper">
                         <div class="main-contact-headline">
                             <h2>Termin & Kontakt</h2>
                             <p>Vereinbare noch heute deinen persönlichen, kostenfreien Beratungstermin und starte mit uns in dein neues Leben!</p>
@@ -217,16 +217,24 @@
                                 <div class="main-contact-form-interest-wrapper">
                                     <h4 class="main-contact-form-interest-headline">Ich habe Interesse an</h4>
                                     <div class="main-contact-form-interest-checkboxes">
-                                        <label for="hairremoval"><input type="checkbox" name="hairremoval" id="hairremoval" />Dauerhafte Haarentfernung</label>
-                                        <label for="cryolipolysis"><input type="checkbox" name="cryolipolysis" id="cryolipolysis" />360° Kryolipolyse</label>
+                                        <label for="hairremoval"><input type="checkbox" name="hairremoval" id="hairremoval" />Dauerhafter Haarentfernung¹</label>
+                                        <label for="cryolipolysis"><input type="checkbox" name="cryolipolysis" id="cryolipolysis" />360° Kryolipolyse²</label>
                                     </div>
                                 </div>
-                                <input class="main-contact-form-input" type="text" name="firstname" placeholder="Vorname *" required />
-                                <input class="main-contact-form-input" type="text" name="lastname" placeholder="Nachname *" required />
-                                <input class="main-contact-form-input" type="email" name="email" placeholder="E-Mail *" required />
+                                <input class="main-contact-form-input" type="text" name="firstname" placeholder="Vorname*" required />
+                                <input class="main-contact-form-input" type="text" name="lastname" placeholder="Nachname*" required />
+                                <input class="main-contact-form-input" type="email" name="email" placeholder="E-Mail*" required />
                                 <input class="main-contact-form-input" type="tel" name="phone" placeholder="Telefon" />
-                                <textarea class="main-contact-form-input" name="message" id="message" cols="30" rows="10" placeholder="Deine Nachricht an uns"></textarea>
-                                <button class="main-contact-form-button" type="submit">Senden</button>
+                                <textarea class="main-contact-form-input" name="message" id="message" placeholder="Deine Nachricht an uns"></textarea>
+                                <button class="main-contact-form-button" type="submit">Nachricht Senden</button>
+                                <div class="main-contact-form-notification success">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <p>Deine Nachricht wurde erfolgreich versendet!</p>
+                                </div>
+                                <div class="main-contact-form-notification error">
+                                    <i class="fa-solid fa-circle-exclamation"></i>
+                                    <p>Fehler: Bitte ergänze eine gültige E-Mail Adresse.</p>
+                                </div>
                             </form>
                         </section>
                     </div>
@@ -277,6 +285,10 @@ Google Rezensionen Widget basteln
 NISV Siegel basteln
 über Light-Touch Bereich: Fakten und Zahlen! über 10000 Behandlungen, über 15 Jahre, etc.
 
+optional:
+- Inputfelder wie auf https://codingbeautydev.com/blog/material-design-text-field/ bauen
+
+
 
 Inhalte:
 Rechtstexte von eRecht24
@@ -285,10 +297,12 @@ Preise inkl. meistgebuchte behandlungen
 FAQ zu IPL / Nadelepilation / Kryo
 
 
+
 Maureen to-do:
 - Hero Bild suchen
 - alle anderen Bilder suchen
 - Farbkorrektur / Zuschnitt aller Bilder
+
 
 
 --Logo--
