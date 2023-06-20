@@ -41,6 +41,10 @@ html, body {
   height: 100%;
 }
 
+header, main, footer {
+  width: 100%;
+}
+
 body {
   background-color: #fff;
   color: var(--primary-green);
@@ -62,6 +66,7 @@ a, button, summary {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .header-container {
@@ -75,7 +80,7 @@ a, button, summary {
   width: 100%;
   padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
   background-color: #fff;
-  z-index: 1;
+  z-index: 100;
 }
 
 .header-logo-wrapper {
@@ -413,7 +418,7 @@ a, button, summary {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  gap: 2.4rem;
+  gap: 3.2rem;
   width: 100%;
   padding: 0 3.2rem;
   text-align: center;
@@ -441,7 +446,7 @@ a, button, summary {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  gap: 2.4rem;
+  gap: 3.2rem;
   width: 100%;
 }
 
@@ -488,11 +493,11 @@ a, button, summary {
   justify-content: center;
   align-items: center;
   width: calc(100% - 4.8rem);
+  height: 24rem;
 }
 .main-lt-reasons-slider-image img {
-  width: 100%;
-  max-width: fit-content;
-  max-height: 28rem;
+  max-width: 100%;
+  max-height: 24rem;
 }
 
 .main-lt-reasons-slider-arrows {
@@ -865,6 +870,7 @@ a, button, summary {
   align-items: center;
   gap: 2.4rem;
   width: 100%;
+  max-width: 48rem;
   padding: 0 3.2rem;
 }
 
@@ -987,6 +993,7 @@ textarea {
   align-items: center;
   gap: 1.6rem;
   width: 100%;
+  max-width: 32rem;
   margin-top: 1.6rem;
   padding: 1.6rem 1.6rem 1.6rem 2.4rem;
   font-size: 3.2rem;
@@ -994,14 +1001,12 @@ textarea {
   text-align: center;
 }
 .main-contact-form-notification.success {
-  display: none;
   border: 0.1rem solid #20bf6b;
   border-radius: 1.6rem;
   background-color: #D4FADE;
   color: #20bf6b;
 }
 .main-contact-form-notification.error {
-  display: none;
   border: 0.1rem solid #eb3b5a;
   border-radius: 1.6rem;
   background-color: #FFE4E4;
@@ -1017,7 +1022,6 @@ textarea {
   justify-content: center;
   align-items: center;
   gap: 3.2rem;
-  width: 100vw;
   padding: 4.8rem 0 calc(4.8rem + env(safe-area-inset-bottom)) 0;
   background-color: var(--light-grey);
   color: var(--secondary-text);
