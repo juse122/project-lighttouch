@@ -65,27 +65,31 @@ detailsElements.forEach(element => {
 
 // Contact form submit message & error handling
 
-const formElement = document.querySelector(".main-contact-form");
+const submitButtonElement = document.querySelector(".main-contact-form-button");
 
-formElement.addEventListener("submit", (event) => {
+submitButtonElement.addEventListener("click", async (event) => {
     event.preventDefault();
+
+    const formElement = document.querySelector(".main-contact-form");
     const successElement = document.querySelector(".success");
     const errorElement = document.querySelector(".error");
 
     try {
-        fetch(formElement.action, {
+        await fetch(formElement.action, {
             method: formElement.method,
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json",
+            },
             body: new FormData(formElement),
-        })
-
-        .then(() => {
-            errorElement.style.display = "none";
-            successElement.style.display = "flex";
         });
+
+        errorElement.style.display = "none";
+        successElement.style.display = "flex";
 
     } catch (error) {
         successElement.style.display = "none";
         errorElement.style.display = "flex";
-        errorElement.querySelector("p").innerText = `Fehler: ${ error }`;
+        errorElement.querySelector("p").innerText = error;
     };
 });
