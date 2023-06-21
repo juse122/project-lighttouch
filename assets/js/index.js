@@ -63,33 +63,94 @@ detailsElements.forEach(element => {
 
 
 
-// Contact form submit message & error handling
+// Contact form submit message & error handling //
 
 const submitButtonElement = document.querySelector(".main-contact-form-button");
 
 submitButtonElement.addEventListener("click", async (event) => {
-    event.preventDefault();
-
     const formElement = document.querySelector(".main-contact-form");
     const successElement = document.querySelector(".success");
     const errorElement = document.querySelector(".error");
 
-    try {
-        await fetch(formElement.action, {
-            method: formElement.method,
-            headers: {
-                "Content-Type": "application/json",
-                "Accept": "application/json",
-            },
-            body: new FormData(formElement),
-        });
+    const firstCheckBoxElement = document.querySelector("input[type=checkbox]");
+    const checkedElements = document.querySelectorAll("input[type=checkbox]:checked");
 
-        errorElement.style.display = "none";
-        successElement.style.display = "flex";
+    event.preventDefault();
 
-    } catch (error) {
-        successElement.style.display = "none";
-        errorElement.style.display = "flex";
-        errorElement.querySelector("p").innerText = error;
-    };
+    checkedElements.length === 0 ? firstCheckBoxElement.setCustomValidity("Es muss mindestens ein Thema ausgewählt sein.") : firstCheckBoxElement.setCustomValidity("");
+
+    if (formElement.checkValidity()) {
+        try {
+            await fetch(formElement.action, {
+                method: formElement.method,
+                headers: {
+                    "Content-Type": "application/json",
+                    "Accept": "application/json",
+                },
+                body: new FormData(formElement),
+            });
+
+            errorElement.style.display = "none";
+            successElement.style.display = "flex";
+            formElement.reset();
+
+        } catch (error) {
+            successElement.style.display = "none";
+            errorElement.style.display = "flex";
+            errorElement.querySelector("p").innerText = error;
+        };
+
+    } else formElement.reportValidity();
+});
+
+
+
+// Contact form submit status message close function //
+
+const closingButtonElements = document.querySelectorAll(".main-contact-form-notification-close");
+
+closingButtonElements.forEach(element => {
+    element.addEventListener("click", (event) => {
+        event.preventDefault();
+        
+        element.parentElement.style.display = "none";
+    });
+});
+
+
+
+// Create correct link scroll behaviour //
+
+const hrLinkElements = document.querySelectorAll(".hr-link");
+const cryoLinkElements = document.querySelectorAll(".cryo-link");
+const contactLinkElements = document.querySelectorAll(".contact-link");
+
+hrLinkElements.forEach(element => {
+    element.addEventListener("click", (event) => {
+        event.preventDefault();
+
+        const hairremovalPageArea = document.querySelector("#hairremoval");
+        const positionData = hairremovalPageArea.getBoundingClientRect();
+        window.scrollBy(0, positionData.y - 112);
+    });
+});
+
+cryoLinkElements.forEach(element => {
+    element.addEventListener("click", (event) => {
+        event.preventDefault();
+
+        const cryolipolysisPageArea = document.querySelector("#cryolipolysis");
+        const positionData = cryolipolysisPageArea.getBoundingClientRect();
+        window.scrollBy(0, positionData.y - 112);
+    });
+});
+
+contactLinkElements.forEach(element => {
+    element.addEventListener("click", (event) => {
+        event.preventDefault();
+
+        const contactPageArea = document.querySelector("#contact");
+        const positionData = contactPageArea.getBoundingClientRect();
+        window.scrollBy(0, positionData.y - 112);
+    });
 });

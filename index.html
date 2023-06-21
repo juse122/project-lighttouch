@@ -29,9 +29,9 @@
                 </div>
                 <nav class="header-navigation-wrapper">
                     <ul class="header-navigation">
-                        <li><a class="header-navigation-link" href="#hairremoval">Haarentfernung</a></li>
-                        <li><a class="header-navigation-link" href="#cryolipolysis">Kryolipolyse</a></li>
-                        <li><a class="header-navigation-link contact" href="#contact">Termin</a></li>
+                        <li><a class="header-navigation-link hr-link" href="#hairremoval">Haarentfernung</a></li>
+                        <li><a class="header-navigation-link cryo-link" href="#cryolipolysis">Kryolipolyse</a></li>
+                        <li><a class="header-navigation-link contact contact-link" href="#contact">Termin</a></li>
                     </ul>
                 </nav>
 
@@ -47,9 +47,9 @@
                             <h1 class="main-hero-headline">Dauerhafte¹ Haarentfernung</h1>
                             <h1 class="main-hero-headline">360° Kryolipolyse²</h1>
                             <p class="main-hero-text">Die Experten für streichelzarte Haut seit über 15 Jahren.</p>
-                            <a class="main-hero-button-desktop" href="#contact">Jetzt Termin anfragen</a>
+                            <a class="main-hero-button-desktop contact-link" href="#contact">Jetzt Termin anfragen</a>
                         </div>
-                        <a class="main-hero-button-mobile" href="#contact">Jetzt Termin anfragen</a>
+                        <a class="main-hero-button-mobile contact-link" href="#contact">Jetzt Termin anfragen</a>
                     </div>
 
                     <div class="main-badge-wrapper">
@@ -114,7 +114,7 @@
                                     </div>
                                     <h3 class="main-slider-slide-headline">IPL Haarentfernung</h3>
                                     <p class="main-slider-slide-text">Das Light-Touch Institut Berlin ist seit über 15 Jahren die Top-Adresse für streichelzarte, dauerhaft haarfreie Haut. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates blanditiis perferendis iure facere a incidunt, quam dicta ab, quaerat impedit nihil eos cumque excepturi doloribus iste illum consequuntur! Dolores, magni.</p>
-                                    <a class="main-slider-slide-link" href="#hairremoval">Mehr erfahren</a>
+                                    <a class="main-slider-slide-link hr-link" href="#hairremoval">Mehr erfahren</a>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="main-slider-slide-image">
@@ -122,7 +122,7 @@
                                     </div>
                                     <h3 class="main-slider-slide-headline">Nadelepilation</h3>
                                     <p class="main-slider-slide-text">Das Light-Touch Institut Berlin ist seit über 15 Jahren die Top-Adresse für streichelzarte, dauerhaft haarfreie Haut. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates blanditiis perferendis iure facere a incidunt, quam dicta ab, quaerat impedit nihil eos cumque excepturi doloribus iste illum consequuntur! Dolores, magni.</p>
-                                    <a class="main-slider-slide-link" href="#hairremoval">Mehr erfahren</a>
+                                    <a class="main-slider-slide-link hr-link" href="#hairremoval">Mehr erfahren</a>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="main-slider-slide-image">
@@ -130,7 +130,7 @@
                                     </div>
                                     <h3 class="main-slider-slide-headline">360° Kryolipolyse²</h3>
                                     <p class="main-slider-slide-text">Das Light-Touch Institut Berlin ist seit über 15 Jahren die Top-Adresse für streichelzarte, dauerhaft haarfreie Haut. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates blanditiis perferendis iure facere a incidunt, quam dicta ab, quaerat impedit nihil eos cumque excepturi doloribus iste illum consequuntur! Dolores, magni.</p>
-                                    <a class="main-slider-slide-link" href="#cryolipolysis">Mehr erfahren</a>
+                                    <a class="main-slider-slide-link cryo-link" href="#cryolipolysis">Mehr erfahren</a>
                                 </div>
                             </div>
                             <div class="swiper-pagination swiper-pagination-2"></div>
@@ -153,7 +153,7 @@
                                         <h3>Termin vereinbaren</h3>
                                     </div>
                                     <p class="main-slider-slide-text">Kontaktiere uns einfach via E-Mail oder Telefon, um deinen individuellen, kostenfreien Beratungstermin bei uns zu vereinbaren.</p>
-                                    <a class="main-slider-slide-link" href="#contact">Termin vereinbaren</a>
+                                    <a class="main-slider-slide-link contact-link" href="#contact">Termin vereinbaren</a>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="main-slider-slide-image">
@@ -248,10 +248,10 @@
                             <section class="main-contact-form-wrapper">
                                 <form class="main-contact-form" action="https://submit-form.com/kfaVPSdW" method="post">
                                     <div class="main-contact-form-interest-wrapper">
-                                        <h4 class="main-contact-form-interest-headline">Ich habe Interesse an</h4>
+                                        <h4 class="main-contact-form-interest-headline">Ich habe Interesse an*</h4>
                                         <div class="main-contact-form-interest-checkboxes">
-                                            <label for="hairremoval"><input type="checkbox" name="hairremoval" id="hairremoval" />Dauerhafter Haarentfernung¹</label>
-                                            <label for="cryolipolysis"><input type="checkbox" name="cryolipolysis" id="cryolipolysis" />360° Kryolipolyse²</label>
+                                            <label for="hairremoval-checkbox"><input type="checkbox" name="hairremoval" id="hairremoval-checkbox" />Dauerhafter Haarentfernung¹</label>
+                                            <label for="cryolipolysis-checkbox"><input type="checkbox" name="cryolipolysis" id="cryolipolysis-checkbox" />360° Kryolipolyse²</label>
                                         </div>
                                     </div>
                                     <input class="main-contact-form-input" type="text" name="firstname" placeholder="Vorname*" required />
@@ -259,14 +259,19 @@
                                     <input class="main-contact-form-input" type="email" name="email" placeholder="E-Mail*" required />
                                     <input class="main-contact-form-input" type="tel" name="phone" placeholder="Telefon" />
                                     <textarea class="main-contact-form-input" name="message" id="message" placeholder="Deine Nachricht an uns"></textarea>
+                                    <div class="main-contact-form-dsgvo">
+                                        <label for="dsgvo"><input type="checkbox" name="dsgvo" id="dsgvo" required><p>Ich bestätige, dass ich die <a href="http://" target="_blank">Datenschutzerklärung</a> zur Kenntnis genommen habe. Ich stimme zu, dass meine Angaben und Daten zur Beantwortung meiner Anfrage elektronisch erhoben und gespeichert werden. Ich nehme zur Kenntnis, dass ich für die Zukunft jederzeit die Möglichkeit habe, meine Einwilligung per E-Mail an info@lighttouch-institut.de zu widerrufen.</p></label>
+                                    </div>
                                     <button class="main-contact-form-button" type="submit">Nachricht Senden</button>
                                     <div class="main-contact-form-notification success">
                                         <i class="fa-solid fa-circle-check"></i>
                                         <p>Deine Nachricht wurde erfolgreich versendet!</p>
+                                        <button class="main-contact-form-notification-close"><i class="fa-solid fa-xmark"></i></button>
                                     </div>
                                     <div class="main-contact-form-notification error">
                                         <i class="fa-solid fa-circle-exclamation"></i>
                                         <p>Fehler: Bitte ergänze eine gültige E-Mail Adresse.</p>
+                                        <button class="main-contact-form-notification-close"><i class="fa-solid fa-xmark"></i></button>
                                     </div>
                                 </form>
                             </section>
@@ -350,22 +355,24 @@
 
 
 <!--
-to-do:
+sass --watch assets/scss:assets/css
+
+
+
+To-do:
 - Click, Hover, Focus Effekte für alle Elemente
-- Scroll Links mit JavaScript korrigieren
-
 - Kontaktformular beenden
-    - JavaScript bauen
-    - Checkboxen required machen (mind. 1)
     - Datenschutzhinweis vor Absenden, ggf. mit Checkbox
-    - Fehlermeldungen überdenken, vllt Modal mit Wegklickoption?
-
+    - Inputfelder bei Fehler rot hervorheben
 - Google Rezensionen Widget basteln
 - NISV Siegel basteln
 - über Light-Touch Bereich: Fakten und Zahlen! über 10000 Behandlungen, über 15 Jahre, etc.
 
-optional:
+Optional:
 - Inputfelder wie auf https://codingbeautydev.com/blog/material-design-text-field/ bauen
+
+Bugs:
+- iOS landscape bilder skalieren nicht richtig
 
 
 
@@ -385,16 +392,8 @@ Maureen to-do:
 
 
 
---Logo--
-Montserrat regular, 64px, 280pt tracking vs 14px, 280pt tracking
-
-sass --watch assets/scss:assets/css
-
-
-
-v.01
-entdeckte verbesserungen:
-
-iOS landscape
-- bilder skalieren nicht richtig
+Start php Server
+sudo /opt/lampp/lampp start
+sudo /opt/lampp/lampp stop
+sudo /opt/lampp/manager-linux-x64.run
 -->
