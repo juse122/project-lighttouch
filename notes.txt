@@ -1,0 +1,48 @@
+
+sass --watch assets/scss:assets/css
+
+To-do:
+- Click, Hover, Focus Effekte für alle Elemente
+- Google Rezensionen Widget basteln
+- NISV Siegel basteln
+- über Light-Touch Bereich: Fakten und Zahlen! über 10000 Behandlungen, über 15 Jahre, etc.
+- Bilder mittig anzeigen
+- Bilder finale Anzeigegröße festlegen
+- Layout für > 640px und > 960px erstellen
+- Hintergrundfarbe mit Abschnitten ändern? (weiß/hellgrün/weiß etc.)
+
+Kontaktformular:
+- sichere TLS-/SSL-Übertragung?
+- PHP-Backendseite bauen
+- reCAPTCHA finalisieren
+
+Abschluss:
+- HTML, CSS, JS file refactoring
+- Load time & performance optimization
+- SEO
+
+Optional:
+- Inputfelder wie auf https://codingbeautydev.com/blog/material-design-text-field/ bauen
+
+
+
+Inhalte:
+- Rechtstexte von eRecht24
+- Dauerhaft und Kryolipolyse mit Sternchen erklären
+- Preise inkl. meistgebuchte Behandlungen
+- FAQ zu IPL / Nadelepilation / Kryo
+- WETEGE Handstück Seite
+
+
+
+Maureen to-do:
+- Hero Bild suchen
+- alle anderen Bilder suchen
+- Farbkorrektur / Zuschnitt aller Bilder
+
+
+
+Start php Server
+sudo /opt/lampp/lampp start
+sudo /opt/lampp/lampp stop
+sudo /opt/lampp/manager-linux-x64.run

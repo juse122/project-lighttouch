@@ -63,6 +63,14 @@ detailsElements.forEach(element => {
 
 
 
+// Contact form input validation //
+
+
+
+
+
+
+
 // Contact form submit message & error handling //
 
 const submitButtonElement = document.querySelector(".main-contact-form-button");
@@ -72,15 +80,18 @@ submitButtonElement.addEventListener("click", async (event) => {
     const successElement = document.querySelector(".success");
     const errorElement = document.querySelector(".error");
 
-    const firstCheckBoxElement = document.querySelector("input[type=checkbox]");
-    const checkedElements = document.querySelectorAll("input[type=checkbox]:checked");
-
     event.preventDefault();
-
-    checkedElements.length === 0 ? firstCheckBoxElement.setCustomValidity("Es muss mindestens ein Thema ausgewählt sein.") : firstCheckBoxElement.setCustomValidity("");
 
     if (formElement.checkValidity()) {
         try {
+            await grecaptcha.ready(() => {
+                grecaptcha.execute("6Ldi2rwmAAAAAEjjzoaCv8X3A5hQWIKKS4E5RKJC", { action: "submit" })
+                .then((token) => {
+                    console.log("Set reCAPTCHA token: " + token);
+                    document.querySelector("#recaptcha").value = token;
+                });
+            });
+
             await fetch(formElement.action, {
                 method: formElement.method,
                 headers: {
@@ -131,7 +142,10 @@ hrLinkElements.forEach(element => {
 
         const hairremovalPageArea = document.querySelector("#hairremoval");
         const positionData = hairremovalPageArea.getBoundingClientRect();
-        window.scrollBy(0, positionData.y - 112);
+
+        if (window.matchMedia("(min-width: 640px)").matches && window.matchMedia("(max-width: 959px)").matches) {
+            window.scrollBy(0, positionData.y - 88);
+        } else window.scrollBy(0, positionData.y - 112);
     });
 });
 
@@ -141,7 +155,10 @@ cryoLinkElements.forEach(element => {
 
         const cryolipolysisPageArea = document.querySelector("#cryolipolysis");
         const positionData = cryolipolysisPageArea.getBoundingClientRect();
-        window.scrollBy(0, positionData.y - 112);
+        
+        if (window.matchMedia("(min-width: 640px)").matches && window.matchMedia("(max-width: 959px)").matches) {
+            window.scrollBy(0, positionData.y - 88);
+        } else window.scrollBy(0, positionData.y - 112);
     });
 });
 
@@ -151,6 +168,9 @@ contactLinkElements.forEach(element => {
 
         const contactPageArea = document.querySelector("#contact");
         const positionData = contactPageArea.getBoundingClientRect();
-        window.scrollBy(0, positionData.y - 112);
+        
+        if (window.matchMedia("(min-width: 640px)").matches && window.matchMedia("(max-width: 959px)").matches) {
+            window.scrollBy(0, positionData.y - 88);
+        } else window.scrollBy(0, positionData.y - 112);
     });
 });
