@@ -662,7 +662,7 @@ a, button, summary {
   line-height: 1.5;
   padding: 3.2rem;
   border-bottom: 1px solid #e8e8e8;
-  background-color: var(--light-grey);
+  background-color: var(--light-green);
   color: var(--secondary-text);
 }
 

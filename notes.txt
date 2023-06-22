@@ -2,6 +2,14 @@
 sass --watch assets/scss:assets/css
 
 To-do:
+- facts bereich ohne slider bauen
+- kosten tabelle bauen
+- Hintergrundfarbe mit Abschnitten ändern? (weiß/hellgrün/weiß etc.)
+- Hinweise dauerhaft / kryo bauen
+- impressum, datenschutz etc. bauen
+- cookie banner bauen
+
+
 - Click, Hover, Focus Effekte für alle Elemente
 - Google Rezensionen Widget basteln
 - NISV Siegel basteln
@@ -9,12 +17,15 @@ To-do:
 - Bilder mittig anzeigen
 - Bilder finale Anzeigegröße festlegen
 - Layout für > 640px und > 960px erstellen
-- Hintergrundfarbe mit Abschnitten ändern? (weiß/hellgrün/weiß etc.)
 
 Kontaktformular:
 - sichere TLS-/SSL-Übertragung?
 - PHP-Backendseite bauen
 - reCAPTCHA finalisieren
+
+Texte:
+- https://hairfree.de/
+- https://fachzentrum-fuer-aesthetik.de/
 
 Abschluss:
 - HTML, CSS, JS file refactoring
