@@ -28,19 +28,6 @@ const swiperTwo = new Swiper(".swiper-2", {
     },
 });
 
-const swiperThree = new Swiper(".swiper-3", {
-    direction: "horizontal",
-    loop: true,
-    pagination: {
-        el: ".swiper-pagination-3",
-        clickable: true,
-    },
-    navigation: {
-        prevEl: ".swiper-button-prev-3",
-        nextEl: ".swiper-button-next-3",
-    },
-});
-
 
 
 // Details elements toggle plus/minus symbol on open/close //
@@ -60,14 +47,6 @@ detailsElements.forEach(element => {
         };
     });
 });
-
-
-
-// Contact form input validation //
-
-
-
-
 
 
 

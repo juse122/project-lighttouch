@@ -2,7 +2,6 @@
 sass --watch assets/scss:assets/css
 
 To-do:
-- facts bereich ohne slider bauen
 - kosten tabelle bauen
 - Hintergrundfarbe mit Abschnitten ändern? (weiß/hellgrün/weiß etc.)
 - Hinweise dauerhaft / kryo bauen
@@ -20,6 +19,7 @@ To-do:
 
 Kontaktformular:
 - sichere TLS-/SSL-Übertragung?
+- Server-side validation?
 - PHP-Backendseite bauen
 - reCAPTCHA finalisieren
 
