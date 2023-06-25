@@ -688,12 +688,44 @@ a, button, summary {
 }
 
 .main-services-faq-answer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
   font-size: 1.6rem;
   line-height: 1.5;
   padding: 3.2rem;
   border-bottom: 1px solid #e8e8e8;
   background-color: #fff;
   color: var(--secondary-text);
+}
+
+.main-services-faq-answer-table {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 1.6rem;
+}
+.main-services-faq-answer-table h3 {
+  font-weight: 650;
+}
+.main-services-faq-answer-table.men {
+  margin-bottom: 1.6rem;
+}
+
+.main-services-faq-answer-table-content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main-services-faq-answer-table-content-price {
+  text-align: right;
 }
 
 .main-services-faq-entry:last-child > .main-services-faq-question {

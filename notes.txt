@@ -2,17 +2,18 @@
 sass --watch assets/scss:assets/css
 
 To-do:
-- kosten tabelle bauen
-- Hintergrundfarbe mit Abschnitten ändern? (weiß/hellgrün/weiß etc.)
+- kosten tabelle bauen ipl/nadel/kryo
 - Hinweise dauerhaft / kryo bauen
 - impressum, datenschutz etc. bauen
+    -> 5 Unterseiten (hinweise, impressum, datenschutz, cookies, wetege)
+    -> Rechtstexte neu generieren
 - cookie banner bauen
 
 
 - Click, Hover, Focus Effekte für alle Elemente
 - Google Rezensionen Widget basteln
 - NISV Siegel basteln
-- über Light-Touch Bereich: Fakten und Zahlen! über 10000 Behandlungen, über 15 Jahre, etc.
+- cookie banner bauen
 - Bilder mittig anzeigen
 - Bilder finale Anzeigegröße festlegen
 - Layout für > 640px und > 960px erstellen
@@ -37,19 +38,10 @@ Optional:
 
 
 
-Inhalte:
-- Rechtstexte von eRecht24
-- Dauerhaft und Kryolipolyse mit Sternchen erklären
-- Preise inkl. meistgebuchte Behandlungen
-- FAQ zu IPL / Nadelepilation / Kryo
-- WETEGE Handstück Seite
-
-
-
 Maureen to-do:
 - Hero Bild suchen
 - alle anderen Bilder suchen
-- Farbkorrektur / Zuschnitt aller Bilder
+- Farbkorrektur / Zuschnitt aller Bilder -> Fokus in der Bildmitte, damit Slider funktioniert
 
 
 
