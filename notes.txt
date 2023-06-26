@@ -2,26 +2,27 @@
 sass --watch assets/scss:assets/css
 
 To-do:
-- kosten tabelle bauen ipl/nadel/kryo
-- Hinweise dauerhaft / kryo bauen
+- kosten tabelle + erklärung bauen ipl/nadel/kryo
+- Google Rezensionen Widget basteln
+- PHP-Backendseite bauen
+- Click, Hover, Focus, Active Effekte für alle Elemente
+- Layout für > 640px und > 960px erstellen
+
+
+
 - impressum, datenschutz etc. bauen
     -> 5 Unterseiten (hinweise, impressum, datenschutz, cookies, wetege)
     -> Rechtstexte neu generieren
 - cookie banner bauen
-
-
-- Click, Hover, Focus Effekte für alle Elemente
-- Google Rezensionen Widget basteln
 - NISV Siegel basteln
-- cookie banner bauen
 - Bilder mittig anzeigen
 - Bilder finale Anzeigegröße festlegen
-- Layout für > 640px und > 960px erstellen
+
+
 
 Kontaktformular:
 - sichere TLS-/SSL-Übertragung?
 - Server-side validation?
-- PHP-Backendseite bauen
 - reCAPTCHA finalisieren
 
 Texte:
