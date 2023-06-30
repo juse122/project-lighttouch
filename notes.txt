@@ -8,6 +8,10 @@ To-do:
 - Click, Hover, Focus, Active Effekte für alle Elemente
 - Layout für > 640px und > 960px erstellen
 
+- 1803 zufriedene Kunden
+- 43272 Behandlungen (Kunden x24)
+- 16 Jahre / 2007 gegründet
+
 
 
 - impressum, datenschutz etc. bauen
