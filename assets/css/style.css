@@ -66,6 +66,13 @@ a, button, summary {
   background-color: var(--primary-green);
 }
 
+.hr-small {
+  width: 3.6rem;
+  height: 0.3rem;
+  border-radius: 0.15rem;
+  background-color: var(--secondary-text);
+}
+
 .page-container {
   display: flex;
   flex-flow: column nowrap;
@@ -279,7 +286,7 @@ a, button, summary {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: flex-start;
-  gap: 2rem;
+  gap: 1.6rem;
   width: 100%;
   margin: auto 0;
   color: var(--primary-text);
@@ -467,7 +474,7 @@ a, button, summary {
 }
 
 .main-intro-headline {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: 650;
   line-height: 1.3;
 }
@@ -477,7 +484,7 @@ a, button, summary {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  gap: 5.6rem;
+  gap: 6.4rem;
 }
 
 .main-intro-facts-text {
@@ -496,7 +503,7 @@ a, button, summary {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  gap: 5.6rem;
+  gap: 6.4rem;
 }
 
 .main-intro-facts-numbers-block {
@@ -513,7 +520,6 @@ a, button, summary {
 .main-intro-facts-numbers-block p {
   font-size: 1.6rem;
   font-weight: 650;
-  line-height: 1.3;
   color: var(--secondary-text);
 }
 
@@ -524,15 +530,14 @@ a, button, summary {
   align-items: center;
   gap: 3.2rem;
   width: 100%;
-  padding: 6.4rem 0 3.2rem 0;
+  padding: 6.4rem 0;
   background-color: var(--light-green-transparent);
 }
 
 .main-offers-headline {
   padding: 0 3.2rem;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: 650;
-  line-height: 1.2;
   text-align: center;
 }
 
@@ -543,14 +548,13 @@ a, button, summary {
   align-items: center;
   gap: 3.2rem;
   width: 100%;
-  padding-top: 3.2rem;
 }
 
 .main-treatment-headline {
   padding: 0 3.2rem;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: 650;
-  line-height: 1.2;
+  line-height: 1.3;
   text-align: center;
 }
 
@@ -568,9 +572,9 @@ a, button, summary {
 }
 
 .main-slider-slide-headline {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: 650;
-  line-height: 1.2;
+  line-height: 1.3;
   text-align: center;
 }
 
@@ -582,7 +586,7 @@ a, button, summary {
 }
 
 .main-slider-slide-link {
-  margin-bottom: 1.6rem;
+  margin: 1.6rem 0;
   padding: 1.6rem 2.4rem;
   font-size: 1.6rem;
   font-weight: 650;
@@ -621,9 +625,9 @@ a, button, summary {
 
 .main-services-headline {
   padding: 0 3.2rem;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: 650;
-  line-height: 1.2;
+  line-height: 1.3;
   text-align: center;
 }
 
@@ -650,7 +654,7 @@ a, button, summary {
 
 .main-services-faq-headline {
   margin-top: 2.4rem;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: 650;
 }
 
@@ -692,13 +696,16 @@ a, button, summary {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  gap: 2.4rem;
+  gap: 3.2rem;
   font-size: 1.6rem;
   line-height: 1.5;
   padding: 3.2rem;
   border-bottom: 1px solid #e8e8e8;
   background-color: #fff;
   color: var(--secondary-text);
+}
+.main-services-faq-answer span {
+  font-weight: 650;
 }
 
 .main-services-faq-answer-table {
@@ -719,9 +726,12 @@ a, button, summary {
 .main-services-faq-answer-table-content {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 3.2rem;
+  width: 22rem;
+}
+.main-services-faq-answer-table-content p {
+  margin-top: 0.8rem;
 }
 
 .main-services-faq-answer-table-content-price {
@@ -734,7 +744,6 @@ a, button, summary {
 
 .main-services-faq-entry:last-child > .main-services-faq-answer {
   border-top: 1px solid #e8e8e8;
-  border-bottom: none;
 }
 
 .main-contact-wrapper {
@@ -756,8 +765,9 @@ a, button, summary {
   max-width: 48rem;
 }
 .main-contact-headline h2 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: 650;
+  line-height: 1.3;
 }
 .main-contact-headline p {
   font-size: 1.6rem;

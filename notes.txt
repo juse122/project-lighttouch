@@ -2,15 +2,14 @@
 sass --watch assets/scss:assets/css
 
 To-do:
-- kosten tabelle + erklärung bauen ipl/nadel/kryo
-- Google Rezensionen Widget basteln
-- PHP-Backendseite bauen
 - Click, Hover, Focus, Active Effekte für alle Elemente
 - Layout für > 640px und > 960px erstellen
+- Google Rezensionen Widget basteln
+- PHP-Backendseite bauen
 
 - 1803 zufriedene Kunden
 - 43272 Behandlungen (Kunden x24)
-- 16 Jahre / 2007 gegründet
+- 17 Jahre / Juli 2006 gegründet
 
 
 
