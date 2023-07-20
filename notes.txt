@@ -2,6 +2,7 @@
 sass --watch assets/scss:assets/css
 
 To-do:
+- Badges nach rechts schieben in Desktop Ansicht
 - Click, Hover, Focus, Active Effekte für alle Elemente
 - Layout für > 640px und > 960px erstellen
 - Google Rezensionen Widget basteln
