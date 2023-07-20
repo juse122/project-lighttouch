@@ -736,12 +736,12 @@ a, button, summary {
 }
 
 .main-services-hairremoval-wrapper {
-    padding: 6.4rem env(safe-area-inset-right) 0 env(safe-area-inset-left);
+    padding-top: 6.4rem;
     background-color: var(--light-green-transparent);
 }
 
 .main-services-cryolipolysis-wrapper {
-    padding: 6.4rem env(safe-area-inset-right) 0 env(safe-area-inset-left);
+    padding-top: 6.4rem;
 }
 
 .main-services-headline {
@@ -757,7 +757,7 @@ a, button, summary {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    width: calc(100% - 8rem);
+    width: calc(100% - 8rem - env(safe-area-inset-right) - env(safe-area-inset-left));
     max-width: 64rem;
     height: 32rem;
     border-radius: 2.4rem;
@@ -771,7 +771,7 @@ a, button, summary {
 
 .main-services-text {
     max-width: 64rem;
-    padding: 0 3.2rem;
+    padding: 0 calc(3.2rem + env(safe-area-inset-right)) 0 calc(3.2rem + env(safe-area-inset-left));
     font-size: 1.6rem;
     line-height: 1.5;
     text-align: center;
@@ -806,7 +806,7 @@ a, button, summary {
     font-size: 1.6rem;
     font-weight: 650;
     line-height: 1.5;
-    padding: 1.6rem 3.2rem;
+    padding: 1.6rem calc(3.2rem + env(safe-area-inset-right)) 1.6rem calc(3.2rem + env(safe-area-inset-left));
     border-bottom: 1px solid #e8e8e8;
 
     &::-webkit-details-marker {
@@ -827,7 +827,7 @@ a, button, summary {
     gap: 3.2rem;
     font-size: 1.6rem;
     line-height: 1.5;
-    padding: 3.2rem;
+    padding: 3.2rem calc(3.2rem + env(safe-area-inset-right)) 3.2rem calc(3.2rem + env(safe-area-inset-left));
     border-bottom: 1px solid #e8e8e8;
     background-color: #fff;
     color: var(--secondary-text);
