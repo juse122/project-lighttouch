@@ -571,11 +571,13 @@ a, button, summary {
   justify-content: center;
   align-items: center;
   width: calc(100% - 4.8rem);
+  max-width: 64rem;
   height: 24rem;
+  border-radius: 2.4rem;
   overflow: hidden;
 }
 .main-slider-slide-image img {
-  max-height: 24rem;
+  height: 36rem;
 }
 
 .main-slider-slide-headline {
@@ -611,7 +613,6 @@ a, button, summary {
   align-items: center;
   gap: 6.4rem;
   width: 100%;
-  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
 }
 
 .main-services-hairremoval-wrapper, .main-services-cryolipolysis-wrapper {
@@ -624,12 +625,12 @@ a, button, summary {
 }
 
 .main-services-hairremoval-wrapper {
-  padding-top: 6.4rem;
+  padding: 6.4rem env(safe-area-inset-right) 0 env(safe-area-inset-left);
   background-color: var(--light-green-transparent);
 }
 
 .main-services-cryolipolysis-wrapper {
-  padding-top: 6.4rem;
+  padding: 6.4rem env(safe-area-inset-right) 0 env(safe-area-inset-left);
 }
 
 .main-services-headline {
@@ -666,7 +667,7 @@ a, button, summary {
 }
 
 .main-services-faq-headline {
-  margin-top: 2.4rem;
+  margin-top: 3.2rem;
   font-size: 2.4rem;
   font-weight: 650;
 }
