@@ -25,6 +25,7 @@
   --primary-green-active: #146464;
   --light-green: #e1ebe1;
   --light-green-transparent: #e1ebe180;
+  --light-green-transparent-half: #e1ebe140;
   --light-grey: #f5f5f5;
   --medium-grey: #dcdcdc;
   --dark-grey: #a0a0a0;
@@ -449,7 +450,6 @@ a, button, summary {
   gap: 6.4rem;
   width: 100%;
   margin-top: 6.4rem;
-  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
 }
 
 @media (min-width: 640px) {
@@ -469,7 +469,7 @@ a, button, summary {
   align-items: center;
   gap: 3.2rem;
   width: 100%;
-  padding: 0 3.2rem;
+  padding: 0 calc(3.2rem + env(safe-area-inset-right)) 0 calc(3.2rem + env(safe-area-inset-left));
   text-align: center;
 }
 
@@ -493,6 +493,7 @@ a, button, summary {
   justify-content: center;
   align-items: center;
   gap: 1.6rem;
+  max-width: 48rem;
   font-size: 1.6rem;
   line-height: 1.5;
   color: var(--secondary-text);
@@ -523,6 +524,11 @@ a, button, summary {
   color: var(--secondary-text);
 }
 
+@media (min-width: 640px) {
+  .main-intro-facts-numbers {
+    flex-flow: row wrap;
+  }
+}
 .main-offers-wrapper {
   display: flex;
   flex-flow: column nowrap;
@@ -530,7 +536,7 @@ a, button, summary {
   align-items: center;
   gap: 3.2rem;
   width: 100%;
-  padding: 6.4rem 0;
+  padding: 6.4rem env(safe-area-inset-right) 6.4rem env(safe-area-inset-left);
   background-color: var(--light-green-transparent);
 }
 
@@ -548,6 +554,7 @@ a, button, summary {
   align-items: center;
   gap: 3.2rem;
   width: 100%;
+  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
 }
 
 .main-treatment-headline {
@@ -579,6 +586,7 @@ a, button, summary {
 }
 
 .main-slider-slide-text {
+  max-width: 64rem;
   font-size: 1.6rem;
   font-weight: 450;
   line-height: 1.5;
@@ -603,6 +611,7 @@ a, button, summary {
   align-items: center;
   gap: 6.4rem;
   width: 100%;
+  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
 }
 
 .main-services-hairremoval-wrapper, .main-services-cryolipolysis-wrapper {
@@ -637,17 +646,18 @@ a, button, summary {
   justify-content: center;
   align-items: center;
   width: calc(100% - 8rem);
-  max-width: 42rem;
-  height: 28rem;
+  max-width: 64rem;
+  height: 32rem;
   border-radius: 2.4rem;
   overflow: hidden;
 }
 .main-services-image img {
-  height: 32rem;
-  object-position: -3rem -2rem;
+  height: 48rem;
+  object-position: -40px -80px;
 }
 
 .main-services-text {
+  max-width: 64rem;
   padding: 0 3.2rem;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -756,7 +766,7 @@ a, button, summary {
   align-items: center;
   gap: 3.2rem;
   width: 100%;
-  padding: 6.4rem 3.2rem 0 3.2rem;
+  padding: 6.4rem calc(3.2rem + env(safe-area-inset-right)) 0 calc(3.2rem + env(safe-area-inset-left));
 }
 
 .main-contact-headline {
@@ -1026,7 +1036,7 @@ textarea {
   justify-content: center;
   align-items: center;
   gap: 3.2rem;
-  padding: 4.8rem 0 calc(4.8rem + env(safe-area-inset-bottom)) 0;
+  padding: 4.8rem env(safe-area-inset-right) calc(4.8rem + env(safe-area-inset-bottom)) env(safe-area-inset-left);
   background-color: var(--light-grey);
   color: var(--secondary-text);
 }
