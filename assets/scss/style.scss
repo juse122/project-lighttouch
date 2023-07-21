@@ -75,7 +75,7 @@ a, button, summary {
     background-color: var(--primary-green);
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
     .hr {
         width: 7.2rem;
     }
@@ -254,7 +254,7 @@ a, button, summary {
     }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
     .header-container {
         padding: 0 calc(2.4rem + env(safe-area-inset-right)) 0 calc(2.4rem + env(safe-area-inset-left));
     }
@@ -312,7 +312,7 @@ a, button, summary {
     }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
     .main-container {
         margin-top: 8rem;
     }
@@ -446,11 +446,11 @@ a, button, summary {
     .main-hero-button-desktop {
         display: block;
         margin-top: 1.6rem;
-        padding: 2.4rem 3.2rem;
+        padding: 1.6rem 2.4rem;
         font-size: 1.6rem;
         font-weight: 650;
         text-transform: uppercase;
-        border-radius: 3.3rem;
+        border-radius: 2.4rem;
         color: var(--primary-text);
         background-color: var(--primary-green);
     }
@@ -460,9 +460,9 @@ a, button, summary {
     }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
     .main-hero-wrapper {
-        gap: 8rem;
+        overflow-x: hidden;
     }
 
     .main-hero {
@@ -503,8 +503,15 @@ a, button, summary {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
     width: 100%;
+}
+
+.main-badge-background {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
 }
 
 .main-badge-nisv {
@@ -546,13 +553,35 @@ a, button, summary {
     }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
     .main-badge-wrapper {
-        position: inherit;
-        top: unset;
-        right: unset;
+        top: -12.4rem;
+        right: -2.4rem;
+        justify-content: flex-end;
+    }
+
+    .main-badge-background {
+        position: relative;
+        display: flex;
+        flex-flow: row nowrap;
         justify-content: center;
+        align-items: center;
         gap: 6.4rem;
+        padding: 6.4rem 9.6rem 0 20rem;
+        z-index: 5;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            transform: rotate(-5deg);
+            border-radius: 12rem 0 0 0;
+            background-color: #fff;
+        }
     }
 
     .main-badge-nisv {
@@ -595,10 +624,10 @@ a, button, summary {
     }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
     .main-content-wrapper {
         gap: 12rem;
-        margin-top: 12rem;
+        margin-top: -4rem;
     }
 }
 
@@ -676,7 +705,7 @@ a, button, summary {
     }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
     .main-intro-wrapper {
         gap: 4rem;
     }
@@ -740,6 +769,89 @@ a, button, summary {
     font-size: 2.4rem;
     font-weight: 650;
     text-align: center;
+}
+
+.main-offers-desktop-wrapper {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .main-offers-wrapper {
+        gap: 4rem;
+        padding: 12rem 0;
+    }
+
+    .main-offers-headline {
+        font-size: 3.6rem;
+    }
+
+    .swiper.swiper-1 {
+        display: none;
+    }
+
+    .main-offers-desktop-wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding: 0 4rem;
+    }
+
+    .main-offers-desktop {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        width: calc(100% / 3 - 4.8rem);
+        max-width: 40rem;
+    }
+
+    .main-offers-desktop-image {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        width: calc(100% - 4.8rem);
+        max-width: 32rem;
+        height: 36rem;
+        border-radius: 3.2rem;
+        overflow: hidden;
+
+        img {
+            height: 48rem;
+        }
+    }
+
+    .main-offers-desktop-headline {
+        font-size: 2.4rem;
+        font-weight: 650;
+    }
+
+    .main-offers-desktop-text {
+        padding: 0 2.4rem;
+        font-size: 1.6rem;
+        line-height: 1.5;
+        text-align: center;
+        color: var(--secondary-text);
+    }
+
+    .main-offers-desktop-link {
+        padding: 1.6rem 2.4rem;
+        font-size: 1.6rem;
+        font-weight: 650;
+        text-transform: uppercase;
+        border-radius: 2.4rem;
+        background-color: var(--primary-green);
+        color: var(--primary-text);
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-offers-desktop-text {
+        font-size: 1.8rem;
+    }
 }
 
 
