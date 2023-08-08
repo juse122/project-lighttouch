@@ -2,8 +2,9 @@
 sass --watch assets/scss:assets/css
 
 To-do:
+- Layout für > 640px: 90% fertig, bis auf Bilder
+- Layout für > 1024px: weiter machen bei Contact
 - Click, Hover, Focus, Active Effekte für alle Elemente
-- Layout für > 640px und > 1024px erstellen
 - Google Rezensionen Widget basteln
 - PHP-Backendseite bauen
 
@@ -18,8 +19,8 @@ To-do:
     -> Rechtstexte neu generieren
 - cookie banner bauen
 - NISV Siegel basteln
-- Bilder mittig anzeigen
 - Bilder finale Anzeigegröße festlegen
+- Best Practice für Bildergrößen (in px) auf Websites? Bestes Format?
 
 
 
