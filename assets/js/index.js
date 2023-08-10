@@ -1,3 +1,11 @@
+// Set copyright year //
+
+const copyrightYearSpan = document.querySelector("#copyright-year");
+const currentYear = new Date().getFullYear();
+copyrightYearSpan.innerText = currentYear;
+
+
+
 // Swiper slider initialization //
 
 import { Swiper } from "./swiper-9.4.1-bundle.esm.browser.min.js";
