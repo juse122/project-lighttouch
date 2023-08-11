@@ -41,6 +41,8 @@
     --navigation-text-portrait-hover: #404040;
     --navigation-text-landscape: #404040;
     --navigation-text-landscape-hover: #808080;
+    --google-reviews-color: #fbbc05;
+    --v2: #f4b400;
 
 
     font-family: "Montserrat", sans-serif;
@@ -66,6 +68,21 @@ body {
 
 a, button, summary {
     cursor: pointer;
+}
+
+.link-button {
+    background-color: var(--primary-green);
+    color: var(--primary-text);
+
+    &:hover {
+        background-color: var(--primary-green-hover);
+        transition: 0.2s;
+    }
+
+    &:active {
+        background-color: var(--primary-green-active);
+        transition: 0.2s;
+    }
 }
 
 .hr {
@@ -477,13 +494,13 @@ a, button, summary {
 
     .main-hero-headline {
         max-width: unset;
-        font-size: 3.2rem;
+        font-size: 2.8rem;
     }
 
     .main-hero-text {
-        max-width: 40rem;
+        max-width: 36rem;
         margin: 3.2rem 0;
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .main-hero-button-desktop {
@@ -491,6 +508,17 @@ a, button, summary {
         padding: 2.4rem 3.2rem;
         font-size: 2rem;
         border-radius: 3.4rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-hero-headline {
+        font-size: 3.2rem;
+    }
+
+    .main-hero-text {
+        max-width: 40rem;
+        font-size: 2rem;
     }
 }
 
@@ -527,8 +555,90 @@ a, button, summary {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    gap: 1.2rem;
 }
+
+.main-badge-google-reviews {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 1.2rem;
+    border-radius: 1.6rem;
+    background-color: #fff;
+}
+
+.main-badge-google-reviews-logo {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 4.4rem;
+    height: 4.4rem;
+
+    img {
+        width: 4.4rem;
+        height: 4.4rem;
+    }
+}
+
+.main-badge-google-reviews-data {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.6rem;
+
+    h3 {
+        font-size: 1.2rem;
+        font-weight: 650;
+        // color: #202124;
+        color: #70757a;
+    }
+
+    p {
+        font-size: 1rem;
+        color: #70757a;
+    }
+}
+
+.main-badge-google-reviews-data-rating {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+#google-rating {
+    font-size: 2rem;
+    font-weight: 650;
+    color: var(--google-reviews-color);
+}
+
+.main-badge-google-reviews-data-rating-stars {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    margin-bottom: 0.2rem;
+    font-size: 1.6rem;
+    color: var(--google-reviews-color);
+}
+
+
+
+.template {
+    height: 8rem;
+
+    img {
+        height: 8rem;
+    }
+}
+
+
 
 .main-badge-nisv {
     display: flex;
@@ -557,8 +667,6 @@ a, button, summary {
         height: 8rem;
     }
 }
-
-
 
 @media (min-width: 640px) {    
     .main-badge-wrapper {
@@ -659,8 +767,6 @@ a, button, summary {
     margin-top: 6.4rem;
 }
 
-
-
 @media (min-width: 640px) {
     .main-content-wrapper {
         margin-top: 2.4rem;
@@ -670,6 +776,12 @@ a, button, summary {
 @media (min-width: 1024px) {
     .main-content-wrapper {
         gap: 12rem;
+        margin-top: -2.4rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-content-wrapper {
         margin-top: 2.4rem;
     }
 }
@@ -1101,6 +1213,11 @@ a, button, summary {
 }
 
 .main-slider-slide-headline {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
     font-size: 2.4rem;
     font-weight: 650;
     text-align: center;
@@ -1272,6 +1389,16 @@ a, button, summary {
     span {
         font-size: 2.2rem;
         pointer-events: none;
+    }
+
+    &:hover {
+        color: var(--primary-green-hover);
+        transition: 0.2s;
+    }
+
+    &:active {
+        color: var(--primary-green-active);
+        transition: 0.2s;
     }
 }
 
@@ -1981,6 +2108,11 @@ textarea {
             font-weight: 650;
             color: var(--secondary-text);
             margin-top: 0.4rem;
+
+            &:hover {
+                color: var(--navigation-text-landscape-hover);
+                transition: 0.2s;
+            }
         }
     }
 
@@ -2056,11 +2188,13 @@ textarea {
 }
 
 .footer-google-reviews {
-    margin: 0;
-    
-    img {
-        height: 12rem;
-    }
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2.4rem;
+    border-radius: 1.6rem;
+    background-color: #fff;
 }
 
 .footer-link-wrapper {
@@ -2093,6 +2227,16 @@ textarea {
     font-size: 1.6rem;
     font-weight: 650;
     color: var(--primary-green);
+
+    &:hover {
+        color: var(--primary-green-hover);
+        transition: 0.2s;
+    }
+
+    &:active {
+        color: var(--primary-green-active);
+        transition: 0.2s;
+    }
 }
 
 .footer-legal-wrapper {
@@ -2119,6 +2263,11 @@ textarea {
 .footer-legal-link {
     font-size: 1.6rem;
     font-weight: 650;
+
+    &:hover {
+        color: var(--navigation-text-landscape-hover);
+        transition: 0.2s;
+    }
 }
 
 .footer-google-recaptcha {
@@ -2128,6 +2277,11 @@ textarea {
 
     a {
         font-weight: 650;
+
+        &:hover {
+            color: var(--navigation-text-landscape-hover);
+            transition: 0.2s;
+        }
     }
 }
 

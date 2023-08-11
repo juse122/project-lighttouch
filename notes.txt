@@ -2,10 +2,17 @@
 sass --watch assets/scss:assets/css
 
 To-do:
-- Click, Hover, Focus, Active Effekte für alle Elemente
-- Google Rezensionen Widget basteln
+- Badge Area + Positionierung überarbeiten in allen Auflösungen
+- Google Rezensionen Widget besten Font finden
+    + API Funktionalität bauen
+    + Größe für alle Auflösungen anpassen
+- Footer größeres Google Widget mit Auflistung aller Bewertungen bauen
+- Google gelb mit Illustrator überprüfen
+
 - PHP-Backendseite bauen
+- 2. Banner ab 1600px Inhalt überlegen
 - Layout mit finalen Texten und Bildern beenden
+- Bildergröße optimieren, mit Illustrator verkleinern
 
 - 1803 zufriedene Kunden
 - 43272 Behandlungen (Kunden x24)

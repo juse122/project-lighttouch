@@ -295,6 +295,14 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
   line-height: 1;
   color: #1ea0a0;
 }
+.swiper-button-prev:after:hover,
+.swiper-button-next:after:hover {
+  color: #198282;
+}
+.swiper-button-prev:after:active,
+.swiper-button-next:after:active {
+  color: #146464;
+}
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
   left: var(--swiper-navigation-sides-offset, 10px);

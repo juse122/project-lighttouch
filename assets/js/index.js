@@ -1,8 +1,6 @@
 // Set copyright year //
 
-const copyrightYearSpan = document.querySelector("#copyright-year");
-const currentYear = new Date().getFullYear();
-copyrightYearSpan.innerText = currentYear;
+document.querySelector("#copyright-year").innerText = new Date().getFullYear();
 
 
 
