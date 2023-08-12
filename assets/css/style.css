@@ -522,7 +522,7 @@ a, button, summary {
 
 #google-rating {
   font-size: 2rem;
-  font-weight: 650;
+  font-weight: 750;
   color: var(--google-colors-yellow);
 }
 
@@ -542,14 +542,11 @@ a, button, summary {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  width: 7.2rem;
-  height: 7.2rem;
-  border-radius: 50%;
-  overflow: hidden;
-  background-color: #214699;
+  width: 6.4rem;
+  height: 6.4rem;
 }
 .main-badge-nisv img {
-  width: 7.2rem;
+  width: 6.4rem;
 }
 
 @media (min-width: 640px) {
