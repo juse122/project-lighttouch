@@ -4,6 +4,12 @@ document.querySelector("#copyright-year").innerText = new Date().getFullYear();
 
 
 
+// Google Reviews Badge data fetch //
+
+// place_id: ChIJOZAmnoxOqEcRLkyODcDKj58
+
+
+
 // Swiper slider initialization //
 
 import { Swiper } from "./swiper-9.4.1-bundle.esm.browser.min.js";
