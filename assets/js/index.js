@@ -67,7 +67,7 @@ detailsElements.forEach(element => {
 const submitButtonElement = document.querySelector(".main-contact-form-button");
 
 submitButtonElement.addEventListener("click", async (event) => {
-    const formElement = document.querySelector(".main-contact-form");
+    const formElement = document.querySelector("#main-contact-form");
     const successElement = document.querySelector(".success");
     const errorElement = document.querySelector(".error");
 
@@ -75,31 +75,35 @@ submitButtonElement.addEventListener("click", async (event) => {
 
     if (formElement.checkValidity()) {
         try {
-            await grecaptcha.ready(() => {
-                grecaptcha.execute("6Ldi2rwmAAAAAEjjzoaCv8X3A5hQWIKKS4E5RKJC", { action: "submit" })
-                .then((token) => {
-                    console.log("Set reCAPTCHA token: " + token);
-                    document.querySelector("#recaptcha").value = token;
-                });
-            });
+            // await grecaptcha.ready(() => {
+            //     grecaptcha.execute("6Ldi2rwmAAAAAEjjzoaCv8X3A5hQWIKKS4E5RKJC", { action: "submit" })
+            //     .then((token) => {
+            //         console.log("Set reCAPTCHA token: " + token);
+            //         document.querySelector("#recaptcha").value = token;
+            //     });
+            // });
 
-            await fetch(formElement.action, {
+            const response = await fetch(formElement.action, {
                 method: formElement.method,
                 headers: {
-                    "Content-Type": "application/json",
                     "Accept": "application/json",
                 },
                 body: new FormData(formElement),
             });
 
-            errorElement.style.display = "none";
-            successElement.style.display = "flex";
-            formElement.reset();
+            const responseData = await response.json();
+
+            if (responseData.success) {
+                errorElement.style.display = "none";
+                successElement.style.display = "flex";
+                formElement.reset();
+
+            } else throw new Error(responseData.error_msg);
 
         } catch (error) {
+            errorElement.querySelector("p").innerText = error;
             successElement.style.display = "none";
             errorElement.style.display = "flex";
-            errorElement.querySelector("p").innerText = error;
         };
 
     } else formElement.reportValidity();

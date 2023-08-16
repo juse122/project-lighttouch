@@ -107,7 +107,7 @@
                     </div>
 
                     <div class="main-offers-wrapper">
-                        <h2 class="main-offers-headline">Unsere Leistungen</h2>
+                        <h2 class="main-offers-headline">Unser Angebot</h2>
                         <div class="hr"></div>
 
                         <div class="swiper swiper-1">
@@ -393,28 +393,29 @@
                         <div class="hr"></div>
                         <div class="main-contact-component-wrapper">
                             <section class="main-contact-form-wrapper">
-                                <form class="main-contact-form" action="https://formspree.io/f/xvonavvw" method="POST">
+                                <form class="main-contact-form" id="main-contact-form" action="https://form.taxi/s/5nexdhf9" method="POST">
                                     <div class="main-contact-form-interest-wrapper">
                                         <h4 class="main-contact-form-interest-headline">Ich habe Interesse an</h4>
                                         <div class="main-contact-form-interest-checkboxes">
-                                            <label for="hairremoval-checkbox"><input type="checkbox" name="hairremoval" id="hairremoval-checkbox" />Dauerhafte Haarentfernung¹</label>
-                                            <label for="cryolipolysis-checkbox"><input type="checkbox" name="cryolipolysis" id="cryolipolysis-checkbox" />360° Kryolipolyse²</label>
+                                            <label for="checkbox-1"><input type="checkbox" name="Dauerhafte Haarentfernung" id="checkbox-1" value="Interesse" />Dauerhafte Haarentfernung¹</label>
+                                            <label for="checkbox-2"><input type="checkbox" name="Nadelepilation" id="checkbox-2" value="Interesse" />Nadelepilation</label>
+                                            <label for="checkbox-3"><input type="checkbox" name="Kryolipolyse" id="checkbox-3" value="Interesse" />360° Kryolipolyse²</label>
                                         </div>
                                     </div>
-                                    <input class="main-contact-form-input" type="text" name="firstname" autocomplete="given-name" placeholder="Vorname" />
-                                    <input class="main-contact-form-input" type="text" name="lastname" autocomplete="family-name" placeholder="Nachname" />
-                                    <input class="main-contact-form-input" type="email" name="email" autocomplete="email" placeholder="E-Mail *" aria-required="true" required />
-                                    <input class="main-contact-form-input" type="tel" name="phone" autocomplete="tel" placeholder="Telefon" />
-                                    <textarea class="main-contact-form-input" name="message" id="message" autocomplete="off" placeholder="Deine Nachricht an uns"></textarea>
+                                    <input class="main-contact-form-input" type="text" name="Vorname" autocomplete="given-name" placeholder="Vorname" />
+                                    <input class="main-contact-form-input" type="text" name="Nachname" autocomplete="family-name" placeholder="Nachname" />
+                                    <input class="main-contact-form-input" type="email" name="E-Mail" autocomplete="email" placeholder="E-Mail *" aria-required="true" required />
+                                    <input class="main-contact-form-input" type="tel" name="Telefonnummer" autocomplete="tel" placeholder="Telefon" />
+                                    <textarea class="main-contact-form-input" name="Nachricht" id="message" autocomplete="off" placeholder="Deine Nachricht an uns"></textarea>
+                                    <input type="text" name="_gotcha" value="" style="display:none;" />
                                     <input type="hidden" id="recaptcha" name="recaptcha" />
                                     <div class="main-contact-form-legal">
                                         <p>Bitte beachte unsere <a href="#" target="_blank">Datenschutzerklärung</a>.</p>
                                         <p>* Pflichtfeld</p>
                                     </div>
-                                    <button class="main-contact-form-button link-button" type="submit">Nachricht Senden</button>
                                     <div class="main-contact-form-notification success">
                                         <i class="fa-solid fa-circle-check"></i>
-                                        <p>Die Nachricht wurde erfolgreich versendet!</p>
+                                        <p>Deine Nachricht wurde erfolgreich versendet! Wir werden uns so schnell wie möglich bei dir melden.</p>
                                         <button class="main-contact-form-notification-close"><i class="fa-solid fa-xmark"></i></button>
                                     </div>
                                     <div class="main-contact-form-notification error">
@@ -422,6 +423,7 @@
                                         <p></p>
                                         <button class="main-contact-form-notification-close"><i class="fa-solid fa-xmark"></i></button>
                                     </div>
+                                    <button class="main-contact-form-button link-button" type="submit">Nachricht Senden</button>
                                 </form>
                             </section>
                             <section class="main-contact-location-wrapper">
@@ -457,9 +459,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- <div class="contact-location-google-maps-wrapper">
+                                <div class="contact-location-google-maps-wrapper">
                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.0251603230013!2d13.471297977578825!3d52.5148837366073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e8c9e269039%3A0x9f8fcac00d8e4c2e!2sLight-Touch%20Institut!5e0!3m2!1sde!2sde!4v1687268964690!5m2!1sde!2sde" width="100%" height="100%" style="border: none;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                </div> -->
+                                </div>
                             </section>
                         </div>
                     </div>

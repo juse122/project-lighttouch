@@ -2,9 +2,11 @@
 sass --watch assets/scss:assets/css
 
 To-do:
-- PHP-Backendseite bauen
-- SerpAPI integrieren für Maps Data Fetch
-- ODER selber Scraper mit PHP bauen
+- PHP-Backendseite für reCAPTCHA bauen
+- MariaDB Anbindung für:
+    - SerpAPI integrieren für Maps Data Fetch
+    - ODER selber Scraper bauen
+    - Kontaktformular Error Logging
 
 - Google gelb mit Illustrator überprüfen
 - 2. Banner ab 1600px Inhalt überlegen

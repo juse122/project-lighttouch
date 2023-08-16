@@ -45,7 +45,10 @@
     --google-colors-grey: #70757a;
     --google-colors-yellow: #fbbc05;
     --v2: #f4b400;
-
+    --success: #20bf6b;
+    --success-light: #d4fade;
+    --error: #eb3b5a;
+    --error-light: #ffe4e4;
 
     font-family: "Montserrat", sans-serif;
     font-size: 62.5%;
@@ -1638,7 +1641,7 @@ a, button, summary {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: flex-start;
-    gap: 9.6rem;
+    gap: 6.4rem;
     width: 100%;
 }
 
@@ -1702,7 +1705,7 @@ a, button, summary {
 
         &:checked {
             content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --%3E%3Cpath d='M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z'/%3E%3C/svg%3E");
-            background-color: #1ea0a0;
+            background-color: var(--primary-green);
             transition: 0.2s;
         }
     }
@@ -1725,8 +1728,8 @@ a, button, summary {
     }
 
     &:focus:invalid {
-        border: 0.1rem solid #eb3b5a;
-        box-shadow: 0 0 0 0.2rem #eb3b5a;
+        border: 0.1rem solid var(--error);
+        box-shadow: 0 0 0 0.2rem var(--error);
     }
 }
 
@@ -1768,32 +1771,30 @@ textarea {
     justify-content: center;
     align-items: center;
     gap: 1.6rem;
-    width: 100%;
-    max-width: 32rem;
+    width: calc(100%);
     margin-top: 1.6rem;
-    padding: 1.6rem 3.2rem 1.6rem 2.4rem;
+    padding: 1.6rem 3.6rem 1.6rem 1.6rem;
     font-size: 3.2rem;
     line-height: 1.5;
-    text-align: center;
 
     &.success {
         display: none;
-        border: 0.1rem solid #20bf6b;
+        border: 0.1rem solid var(--success);
         border-radius: 1.6rem;
-        background-color: #d4fade;
-        color: #20bf6b;
+        background-color: var(--success-light);
+        color: var(--success);
     }
 
     &.error {
         display: none;
-        border: 0.1rem solid #eb3b5a;
+        border: 0.1rem solid var(--error);
         border-radius: 1.6rem;
-        background-color: #ffe4e4;
-        color: #eb3b5a;
+        background-color: var(--error-light);
+        color: var(--error);
     }
 
     p {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -1985,7 +1986,7 @@ textarea {
 
             &:checked {
                 content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --%3E%3Cpath d='M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z'/%3E%3C/svg%3E");
-                background-color: #1ea0a0;
+                background-color: var(--primary-green);
                 transition: 0.2s;
             }
         }
@@ -2045,38 +2046,8 @@ textarea {
     }
 
     .main-contact-form-notification {
-        position: relative;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-items: center;
-        gap: 1.6rem;
-        width: 100%;
-        max-width: 32rem;
-        margin-top: 1.6rem;
-        padding: 1.6rem 3.2rem 1.6rem 2.4rem;
-        font-size: 3.2rem;
-        line-height: 1.5;
-        text-align: center;
-
-        &.success {
-            display: none;
-            border: 0.1rem solid #20bf6b;
-            border-radius: 1.6rem;
-            background-color: #d4fade;
-            color: #20bf6b;
-        }
-
-        &.error {
-            display: none;
-            border: 0.1rem solid #eb3b5a;
-            border-radius: 1.6rem;
-            background-color: #ffe4e4;
-            color: #eb3b5a;
-        }
-
         p {
-            font-size: 1.6rem;
+            font-size: 1.4rem;
         }
     }
 
