@@ -2,16 +2,30 @@
 sass --watch assets/scss:assets/css
 
 To-do:
-- PHP-Backendseite für reCAPTCHA bauen
-- MariaDB Anbindung für:
-    - SerpAPI integrieren für Maps Data Fetch
-    - ODER selber Scraper bauen
-    - Kontaktformular Error Logging
+- SerpAPI Anbindung für Google Widget
+    - js: fetch GET php file --> php: fetch GET database entry
+    - php: fetch GET SerpAPI response & fetch PUT to database
+
+- Kontaktformular & Google Widget Error Logging
+    - js: fetch POST error to php file --> php: fetch PUT to log file on server
+
+- reCAPTCHA Integration
+    - php: generate reCAPTCHA token and echo to js file
+
+- Cookie Banner bauen
+    - informieren, was für Cookies gesetzt werden müssen
+    - einfach keine cookies setzen?
+    - third party service provider für cookie banner?
+
+    
 
 - Google gelb mit Illustrator überprüfen
+- Button Hover Effekt überarbeiten
+- Mobile Active/Focus Effekt wegmachen
 - 2. Banner ab 1600px Inhalt überlegen
 - Layout mit finalen Texten und Bildern beenden
 - Bildergröße optimieren, mit Illustrator verkleinern
+- SCSS aufräumen
 
 - 1803 zufriedene Kunden
 - 43272 Behandlungen (Kunden x24)
@@ -22,17 +36,10 @@ To-do:
 - impressum, datenschutz etc. bauen
     -> 5 Unterseiten (hinweise, impressum, datenschutz, cookies, wetege)
     -> Rechtstexte neu generieren
-- cookie banner bauen
-- NISV Siegel basteln
 - Bilder finale Anzeigegröße festlegen
 - Best Practice für Bildergrößen (in px) auf Websites? Bestes Format?
 
 
-
-Kontaktformular:
-- sichere TLS-/SSL-Übertragung?
-- Server-side validation?
-- reCAPTCHA finalisieren
 
 Texte:
 - https://hairfree.de/
