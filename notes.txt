@@ -2,9 +2,13 @@
 sass --watch assets/scss:assets/css
 
 To-do:
+- SCSS refactoring
+
 - SerpAPI Anbindung für Google Widget
     - js: fetch GET php file --> php: fetch GET database entry
     - php: fetch GET SerpAPI response & fetch PUT to database
+    - ggf. Cronjob auf Hosting Server
+    - besser: new Date() Tag abgleichen bei Aufruf --> wenn abweichend zu Datenbankeintrag, dann neue query und Datenbank überschreiben
 
 - Kontaktformular & Google Widget Error Logging
     - js: fetch POST error to php file --> php: fetch PUT to log file on server
@@ -17,11 +21,10 @@ To-do:
     - einfach keine cookies setzen?
     - third party service provider für cookie banner?
 
-    
 
-- Google gelb mit Illustrator überprüfen
-- Button Hover Effekt überarbeiten
-- Mobile Active/Focus Effekt wegmachen
+
+- Variablen Text color namen umdrehen
+- Nav Links color transition einbauen
 - 2. Banner ab 1600px Inhalt überlegen
 - Layout mit finalen Texten und Bildern beenden
 - Bildergröße optimieren, mit Illustrator verkleinern

@@ -4,6 +4,12 @@ document.querySelector("#copyright-year").innerText = new Date().getFullYear();
 
 
 
+// Set google reviews date //
+
+document.querySelector("#google-reviews-date").innerText = new Date().toLocaleDateString("de-DE");
+
+
+
 // Google Reviews Badge data fetch //
 
 // place_id: ChIJOZAmnoxOqEcRLkyODcDKj58
@@ -138,9 +144,11 @@ hrLinkElements.forEach(element => {
         const hairremovalPageArea = document.querySelector("#hairremoval");
         const positionData = hairremovalPageArea.getBoundingClientRect();
 
-        if (window.matchMedia("(min-width: 640px)").matches && window.matchMedia("(max-width: 959px)").matches) {
+        if (window.matchMedia("(min-width: 1px)").matches && window.matchMedia("(max-width: 639px)").matches) {
+            window.scrollBy(0, positionData.y - 112);
+        } else if (window.matchMedia("(min-width: 640px)").matches && window.matchMedia("(max-width: 1023px)").matches) {
             window.scrollBy(0, positionData.y - 88);
-        } else window.scrollBy(0, positionData.y - 112);
+        } else window.scrollBy(0, positionData.y - 140);
     });
 });
 
@@ -151,9 +159,11 @@ cryoLinkElements.forEach(element => {
         const cryolipolysisPageArea = document.querySelector("#cryolipolysis");
         const positionData = cryolipolysisPageArea.getBoundingClientRect();
         
-        if (window.matchMedia("(min-width: 640px)").matches && window.matchMedia("(max-width: 959px)").matches) {
+        if (window.matchMedia("(min-width: 1px)").matches && window.matchMedia("(max-width: 639px)").matches) {
+            window.scrollBy(0, positionData.y - 112);
+        } else if (window.matchMedia("(min-width: 640px)").matches && window.matchMedia("(max-width: 1023px)").matches) {
             window.scrollBy(0, positionData.y - 88);
-        } else window.scrollBy(0, positionData.y - 112);
+        } else window.scrollBy(0, positionData.y - 140);
     });
 });
 
@@ -163,9 +173,11 @@ contactLinkElements.forEach(element => {
 
         const contactPageArea = document.querySelector("#contact");
         const positionData = contactPageArea.getBoundingClientRect();
-        
-        if (window.matchMedia("(min-width: 640px)").matches && window.matchMedia("(max-width: 959px)").matches) {
+
+        if (window.matchMedia("(min-width: 1px)").matches && window.matchMedia("(max-width: 639px)").matches) {
+            window.scrollBy(0, positionData.y - 112);
+        } else if (window.matchMedia("(min-width: 640px)").matches && window.matchMedia("(max-width: 1023px)").matches) {
             window.scrollBy(0, positionData.y - 88);
-        } else window.scrollBy(0, positionData.y - 112);
+        } else window.scrollBy(0, positionData.y - 140);
     });
 });
