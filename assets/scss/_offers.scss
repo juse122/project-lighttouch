@@ -1,0 +1,120 @@
+// LT offers area //
+
+.main-offers-wrapper, .main-offers-desktop, .main-offers-desktop-image {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-offers-wrapper {
+    gap: 3.2rem;
+    width: 100%;
+    padding: 6.4rem env(safe-area-inset-right) 6.4rem env(safe-area-inset-left);
+    background-color: var(--light-green-transparent);
+
+    @media (min-width: 1024px) {
+        gap: 4rem;
+        padding: 12rem 0;
+    }
+}
+
+.main-offers-headline {
+    padding: 0 3.2rem;
+    font-size: 2.4rem;
+    font-weight: 650;
+    text-align: center;
+
+    @media (min-width: 1024px) {
+        font-size: 3.6rem;
+    }
+}
+
+.swiper.swiper-1 {
+    @media (min-width: 1024px) {
+        display: none;
+    }
+}
+
+.main-offers-desktop-wrapper {
+    display: none;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 192rem;
+    padding: 0 4rem;
+
+    @media (min-width: 1024px) {
+        display: flex;
+    }
+
+    @media (min-width: 1200px) {
+        justify-content: center;
+        gap: 8rem;
+        padding: 4rem 8rem 0 8rem;
+    }
+}
+
+.main-offers-desktop {
+    gap: 4rem;
+    width: calc(100% / 3 - 2.4rem);
+    max-width: 32rem;
+
+    @media (min-width: 1200px) {
+        gap: 5.6rem;
+        max-width: 48rem;
+    }
+}
+
+.main-offers-desktop-image {
+    width: calc(100% - 4.8rem);
+    max-width: 32rem;
+    height: 36rem;
+    border-radius: 3.2rem;
+    overflow: hidden;
+
+    @media (min-width: 1200px) {
+        height: 48rem;
+    }
+
+    img {
+        height: 48rem;
+    }
+}
+
+.main-offers-desktop-headline {
+    font-size: 2rem;
+    font-weight: 650;
+
+    @media (min-width: 1200px) {
+        font-size: 2.4rem;
+    }
+}
+
+.main-offers-desktop-text {
+    margin-top: -1.6rem;
+    padding: 0 2.4rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: center;
+
+    @media (min-width: 1200px) {
+        margin-top: -2.4rem;
+        font-size: 1.8rem;
+    }
+}
+
+.main-offers-desktop-link {
+    padding: 1.6rem 2.4rem;
+    font-size: 1.6rem;
+    font-weight: 650;
+    text-transform: uppercase;
+    border-radius: 2.4rem;
+
+    @media (min-width: 1200px) {
+        padding: 2rem 3.2rem;
+        font-size: 1.8rem;
+        border-radius: 2.9rem;
+    }
+}

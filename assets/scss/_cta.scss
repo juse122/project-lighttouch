@@ -1,0 +1,43 @@
+// Contact Call to Action area //
+
+.main-contact-cta-wrapper {
+    display: none;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    width: 100%;
+    padding: 8rem 0;
+    background-color: var(--light-green-transparent);
+
+    @media (min-width: 1024px) {
+        display: flex;
+    }
+
+    @media (min-width: 1180px) {
+        gap: 12rem;
+    }
+}
+
+.main-contact-cta-text {
+    max-width: 52rem;
+    font-size: 2.4rem;
+    font-weight: 650;
+    line-height: 1.5;
+}
+
+.main-contact-cta-link {
+    padding: 2.4rem 3.2rem;
+    font-size: 2rem;
+    font-weight: 650;
+    text-transform: uppercase;
+    border-radius: 3.4rem;
+}
+
+.banner-2 {
+    display: none;
+
+    @media (min-width: 1600px) {
+        display: flex;
+    }
+}

@@ -1,0 +1,217 @@
+// Badge area //
+
+.main-badge-wrapper, .main-badge-background, .main-badge-google-reviews, .main-badge-google-reviews-logo, .main-badge-google-reviews-data, .main-badge-google-reviews-data-rating, .main-badge-google-reviews-data-rating-stars, .main-badge-nisv {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-badge-wrapper {
+    flex-flow: row nowrap;
+    width: 100%;
+
+    @media (min-width: 1024px) {
+        position: relative;
+        top: -9.2rem;
+        right: -1.6rem;
+        justify-content: flex-end;
+    }
+
+    @media (min-width: 1600px) {
+        top: -10.4rem;
+    }
+}
+
+.main-badge-background {
+    flex-flow: row nowrap;
+    gap: 3.2rem;
+
+    @media (min-width: 640px) {
+        gap: 4rem;
+    }
+
+    @media (min-width: 1024px) {
+        position: relative;
+        gap: 6.4rem;
+        padding: 4.8rem 8rem 0 11.2rem;
+        z-index: 5;
+    }
+
+    @media (min-width: 1600px) {
+        padding: 5.2rem 8rem 0 14.4rem;
+    }
+
+    &::before {
+        @media (min-width: 1024px) {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            transform: rotate(-4deg);
+            border-radius: 17.7rem 0 0 0;
+            background-color: var(--primary-background);
+        }
+
+        @media (min-width: 1600px) {
+            border-radius: 20.2rem 0 0 0;
+        }
+    }
+}
+
+.main-badge-google-reviews {
+    flex-flow: row nowrap;
+    gap: 1.2rem;
+
+    @media (min-width: 1024px) {
+        gap: 1.6rem;
+    }
+
+    @media (min-width: 1600px) {
+        gap: 2.2rem;
+    }
+}
+
+.main-badge-google-reviews-logo {
+    width: 4.4rem;
+    height: 4.4rem;
+
+    @media (min-width: 1024px) {
+        width: 5.2rem;
+        height: 5.2rem;
+    }
+
+    @media (min-width: 1600px) {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    img {
+        width: 4.4rem;
+        height: 4.4rem;
+
+        @media (min-width: 1024px) {
+            width: 5.2rem;
+            height: 5.2rem;
+        }
+
+        @media (min-width: 1600px) {
+            width: 6rem;
+            height: 6rem;
+        }
+    }
+}
+
+.main-badge-google-reviews-data {
+    align-items: flex-start;
+    gap: 0.6rem;
+
+    @media (min-width: 1024px) {
+        gap: 0.8rem;
+    }
+
+    @media (min-width: 1600px) {
+        gap: 0.9rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        font-weight: 650;
+        color: var(--google-colors-grey);
+
+        @media (min-width: 1024px) {
+            font-size: 1.4rem;
+        }
+
+        @media (min-width: 1600px) {
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+    }
+
+    p {
+        color: var(--google-colors-grey);
+
+        @media (min-width: 1024px) {
+            font-size: 1.2rem;
+        }
+
+        @media (min-width: 1600px) {
+            font-size: 1.3rem;
+        }
+    }
+}
+
+.main-badge-google-reviews-data-rating {
+    flex-flow: row nowrap;
+    gap: 1.2rem;
+
+    @media (min-width: 1024px) {
+        gap: 1.6rem;
+    }
+
+    @media (min-width: 1600px) {
+        gap: 1.8rem;
+    }
+}
+
+#google-rating {
+    font-size: 2rem;
+    font-weight: 750;
+    color: var(--google-colors-yellow);
+
+    @media (min-width: 1024px) {
+        font-size: 2.4rem;
+    }
+
+    @media (min-width: 1600px) {
+        font-size: 2.8rem;
+    }
+}
+
+.main-badge-google-reviews-data-rating-stars {
+    flex-flow: row nowrap;
+    gap: 0.2rem;
+    margin-bottom: 0.2rem;
+    font-size: 1.6rem;
+    color: var(--google-colors-yellow);
+
+    @media (min-width: 1024px) {
+        gap: 0.3rem;
+        font-size: 2rem;
+    }
+
+    @media (min-width: 1600px) {
+        font-size: 2.2rem;
+    }
+}
+
+.main-badge-nisv {
+    width: 6.4rem;
+    height: 6.4rem;
+
+    @media (min-width: 1024px) {
+        width: 8.8rem;
+        height: 8.8rem;
+    }
+
+    @media (min-width: 1600px) {
+        width: 10.4rem;
+        height: 10.4rem;
+    }
+
+    img {
+        width: 6.4rem;
+
+        @media (min-width: 1024px) {
+            width: 8.8rem;
+        }
+
+        @media (min-width: 1600px) {
+            width: 10.4rem;
+        }
+    }
+}
